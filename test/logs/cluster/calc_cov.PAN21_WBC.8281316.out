@@ -1,0 +1,62 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	calc_cov
+	1
+
+[Tue Apr 22 12:20:59 2025]
+rule calc_cov:
+    input: /projects/pangen/analysis/jtopham/fragx/samples/PAN21/PanGen-PAN21-WBC.bam, /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN21_WBC.GC_bias.txt
+    output: tmp/PAN21_WBC/tmp_bigWig/PAN21_WBC.uncorrected.bw, tmp/PAN21_WBC/tmp_bigWig/PAN21_WBC.GC_corrected.bw, tmp/PAN21_WBC/tmp_pybedtools
+    jobid: 0
+    wildcards: samples=PAN21_WBC
+
+
+parameters:
+	sample_name = "PAN21_WBC"
+	bam_path = "/projects/pangen/analysis/jtopham/fragx/samples/PAN21/PanGen-PAN21-WBC.bam"
+	GC_bias_path = "/projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN21_WBC.GC_bias.txt"
+	mappability_bias_path = "none"
+	tmp_dir = "tmp"
+	ref_seq_path = "/projects/pangen/analysis/jtopham/fragx/fragx_hg38_ref.fa"
+	mappability_bw = "/projects/pangen/analysis/hmac/applications/Griffin/Ref/k100.Umap.MultiTrackMappability.bw"
+	chrom_sizes_path = "/projects/pangen/analysis/hmac/applications/Griffin/Ref/hg38.standard.chrom.sizes"
+	sites_yaml = "/projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/config/sites.yaml"
+	griffin_scripts_dir = "/projects/pangen/analysis/hmac/applications/Griffin/scripts"
+	chrom_column = "Chrom"
+	position_column = "position"
+	strand_column = "Strand"
+	chroms =  ['chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', 'chr9', 'chr10', 'chr11', 'chr12', 'chr13', 'chr14', 'chr15', 'chr16', 'chr17', 'chr18', 'chr19', 'chr20', 'chr21', 'chr22']
+	norm_window =  [-5000, 5000]
+	sz_range = [100, 200]
+	map_q = 20
+	number_of_sites = "none"
+	sort_by = "none"
+	ascending = "none"
+	CPU = 8
+
+
+Skipping mappability correction
+ACTB processing all 1 sites
+GAPDH_1 processing all 1 sites
+GAPDH_2 processing all 1 sites
+RPLP0 processing all 1 sites
+housekeeping processing all 4 sites
+Total sites (fw/rv/undirected/total): 4/4/0/8
+Intervals to fetch:	3
+Total bp to fetch:	31347
+Max fetch length: 10947 bp
+Starting fetch
+Done with fetch 0 min 2 sec
+Starting export
+Done with export 0 min 2 sec
+
+real	0m4.629s
+user	0m2.636s
+sys	0m0.764s
+[Tue Apr 22 12:21:04 2025]
+Finished job 0.
+1 of 1 steps (100%) done

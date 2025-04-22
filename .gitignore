@@ -1,0 +1,7 @@
+# Large files to ignore
+Ref/k100.Umap.MultiTrackMappability.bw
+Ref/repeat_masker.mapable.k50.Umap.hg38.bedGraph
+demo/bam/Healthy_GSM1833219_downsampled.sorted.mini.cram
+Ref/k100.Umap.MultiTrackMappability.bw
+Ref/repeat_masker.mapable.k50.Umap.hg38.bedGraph
+demo/bam/Healthy_GSM1833219_downsampled.sorted.mini.cram

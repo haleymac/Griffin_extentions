@@ -1,0 +1,153 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 40
+Job counts:
+	count	jobs
+	1	all
+	4	calc_cov
+	1	generate_plots
+	4	merge_sites
+	10
+
+[Tue Apr 22 07:23:55 2025]
+rule calc_cov:
+    input: /projects/pangen/analysis/jtopham/fragx/samples/PAN27/PanGen-PAN27-WBC.bam, /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN27_WBC.GC_bias.txt
+    output: tmp/PAN27_WBC/tmp_bigWig/PAN27_WBC.uncorrected.bw, tmp/PAN27_WBC/tmp_bigWig/PAN27_WBC.GC_corrected.bw, tmp/PAN27_WBC/tmp_pybedtools
+    jobid: 9
+    wildcards: samples=PAN27_WBC
+
+time ../../scripts/griffin_coverage.py 		--sample_name PAN27_WBC 		--bam /projects/pangen/analysis/jtopham/fragx/samples/PAN27/PanGen-PAN27-WBC.bam 		--GC_bias /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN27_WBC.GC_bias.txt 		--mappability_bias none 		--mappability_correction False 		--tmp_dir tmp 		--reference_genome /projects/pangen/analysis/jtopham/fragx/fragx_hg38_ref.fa 		--mappability_bw ../../Ref/k100.Umap.MultiTrackMappability.bw 		--chrom_sizes_path ../../Ref/hg38.standard.chrom.sizes 		--sites_yaml config/sites.yaml 		--griffin_scripts ../../scripts 		--chrom_column Chrom 		--position_column position 		--strand_column Strand 		--chroms chr1 chr2 chr3 chr4 chr5 chr6 chr7 chr8 chr9 chr10 chr11 chr12 chr13 chr14 chr15 chr16 chr17 chr18 chr19 chr20 chr21 chr22 		--norm_window -5000 5000 		--size_range 100 200 		--map_quality 20 		--number_of_sites none 		--sort_by none 		--ascending none 		--CPU 8 
+Submitted job 9 with external jobid 'Submitted batch job 8250919'.
+
+[Tue Apr 22 07:23:55 2025]
+rule calc_cov:
+    input: /projects/pangen/analysis/jtopham/fragx/samples/PAN21/PanGen-PAN21-WBC.bam, /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN21_WBC.GC_bias.txt
+    output: tmp/PAN21_WBC/tmp_bigWig/PAN21_WBC.uncorrected.bw, tmp/PAN21_WBC/tmp_bigWig/PAN21_WBC.GC_corrected.bw, tmp/PAN21_WBC/tmp_pybedtools
+    jobid: 7
+    wildcards: samples=PAN21_WBC
+
+time ../../scripts/griffin_coverage.py 		--sample_name PAN21_WBC 		--bam /projects/pangen/analysis/jtopham/fragx/samples/PAN21/PanGen-PAN21-WBC.bam 		--GC_bias /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN21_WBC.GC_bias.txt 		--mappability_bias none 		--mappability_correction False 		--tmp_dir tmp 		--reference_genome /projects/pangen/analysis/jtopham/fragx/fragx_hg38_ref.fa 		--mappability_bw ../../Ref/k100.Umap.MultiTrackMappability.bw 		--chrom_sizes_path ../../Ref/hg38.standard.chrom.sizes 		--sites_yaml config/sites.yaml 		--griffin_scripts ../../scripts 		--chrom_column Chrom 		--position_column position 		--strand_column Strand 		--chroms chr1 chr2 chr3 chr4 chr5 chr6 chr7 chr8 chr9 chr10 chr11 chr12 chr13 chr14 chr15 chr16 chr17 chr18 chr19 chr20 chr21 chr22 		--norm_window -5000 5000 		--size_range 100 200 		--map_quality 20 		--number_of_sites none 		--sort_by none 		--ascending none 		--CPU 8 
+Submitted job 7 with external jobid 'Submitted batch job 8250920'.
+
+[Tue Apr 22 07:23:55 2025]
+rule calc_cov:
+    input: /projects/pangen/analysis/jtopham/fragx/samples/PAN21/PanGen-PAN21-cfDNA-2018Jan04.bam, /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN21.GC_bias.txt
+    output: tmp/PAN21/tmp_bigWig/PAN21.uncorrected.bw, tmp/PAN21/tmp_bigWig/PAN21.GC_corrected.bw, tmp/PAN21/tmp_pybedtools
+    jobid: 6
+    wildcards: samples=PAN21
+
+time ../../scripts/griffin_coverage.py 		--sample_name PAN21 		--bam /projects/pangen/analysis/jtopham/fragx/samples/PAN21/PanGen-PAN21-cfDNA-2018Jan04.bam 		--GC_bias /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN21.GC_bias.txt 		--mappability_bias none 		--mappability_correction False 		--tmp_dir tmp 		--reference_genome /projects/pangen/analysis/jtopham/fragx/fragx_hg38_ref.fa 		--mappability_bw ../../Ref/k100.Umap.MultiTrackMappability.bw 		--chrom_sizes_path ../../Ref/hg38.standard.chrom.sizes 		--sites_yaml config/sites.yaml 		--griffin_scripts ../../scripts 		--chrom_column Chrom 		--position_column position 		--strand_column Strand 		--chroms chr1 chr2 chr3 chr4 chr5 chr6 chr7 chr8 chr9 chr10 chr11 chr12 chr13 chr14 chr15 chr16 chr17 chr18 chr19 chr20 chr21 chr22 		--norm_window -5000 5000 		--size_range 100 200 		--map_quality 20 		--number_of_sites none 		--sort_by none 		--ascending none 		--CPU 8 
+Submitted job 6 with external jobid 'Submitted batch job 8250921'.
+
+[Tue Apr 22 07:23:56 2025]
+rule calc_cov:
+    input: /projects/pangen/analysis/jtopham/fragx/samples/PAN27/PanGen-PAN27-cfDNA-2018Mar16.bam, /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN27.GC_bias.txt
+    output: tmp/PAN27/tmp_bigWig/PAN27.uncorrected.bw, tmp/PAN27/tmp_bigWig/PAN27.GC_corrected.bw, tmp/PAN27/tmp_pybedtools
+    jobid: 8
+    wildcards: samples=PAN27
+
+time ../../scripts/griffin_coverage.py 		--sample_name PAN27 		--bam /projects/pangen/analysis/jtopham/fragx/samples/PAN27/PanGen-PAN27-cfDNA-2018Mar16.bam 		--GC_bias /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN27.GC_bias.txt 		--mappability_bias none 		--mappability_correction False 		--tmp_dir tmp 		--reference_genome /projects/pangen/analysis/jtopham/fragx/fragx_hg38_ref.fa 		--mappability_bw ../../Ref/k100.Umap.MultiTrackMappability.bw 		--chrom_sizes_path ../../Ref/hg38.standard.chrom.sizes 		--sites_yaml config/sites.yaml 		--griffin_scripts ../../scripts 		--chrom_column Chrom 		--position_column position 		--strand_column Strand 		--chroms chr1 chr2 chr3 chr4 chr5 chr6 chr7 chr8 chr9 chr10 chr11 chr12 chr13 chr14 chr15 chr16 chr17 chr18 chr19 chr20 chr21 chr22 		--norm_window -5000 5000 		--size_range 100 200 		--map_quality 20 		--number_of_sites none 		--sort_by none 		--ascending none 		--CPU 8 
+Submitted job 8 with external jobid 'Submitted batch job 8250922'.
+Waiting at most 60 seconds for missing files.
+Removing temporary output file tmp/PAN27_WBC/tmp_pybedtools.
+[Tue Apr 22 07:24:26 2025]
+Finished job 9.
+1 of 10 steps (10%) done
+
+[Tue Apr 22 07:24:26 2025]
+rule merge_sites:
+    input: tmp/PAN27_WBC/tmp_bigWig/PAN27_WBC.uncorrected.bw, tmp/PAN27_WBC/tmp_bigWig/PAN27_WBC.GC_corrected.bw
+    output: /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN27_WBC/PAN27_WBC.uncorrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN27_WBC/PAN27_WBC.GC_corrected.coverage.tsv, tmp/PAN27_WBC/tmp_pybedtools2
+    jobid: 4
+    wildcards: samples=PAN27_WBC
+
+time ../../scripts/griffin_merge_sites.py 		--sample_name PAN27_WBC 		--uncorrected_bw_path tmp/PAN27_WBC/tmp_bigWig/PAN27_WBC.uncorrected.bw 		--GC_corrected_bw_path tmp/PAN27_WBC/tmp_bigWig/PAN27_WBC.GC_corrected.bw 		--GC_map_corrected_bw_path none 		--mappability_correction False 		--tmp_dir tmp 		--results_dir /projects/pangen/analysis/hmac/applications/Griffin/test/results 		--mappability_bw ../../Ref/k100.Umap.MultiTrackMappability.bw 		--chrom_sizes_path ../../Ref/hg38.standard.chrom.sizes 		--sites_yaml config/sites.yaml 		--griffin_scripts ../../scripts 		--chrom_column Chrom 		--position_column position 		--strand_column Strand 		--chroms chr1 chr2 chr3 chr4 chr5 chr6 chr7 chr8 chr9 chr10 chr11 chr12 chr13 chr14 chr15 chr16 chr17 chr18 chr19 chr20 chr21 chr22 		--norm_window -5000 5000 		--save_window -1000 1000 		--center_window -30 30 		--fft_window -960 960 		--fft_index 10 		--smoothing_length 165 		--exclude_paths ../../Ref/encode_unified_GRCh38_exclusion_list.bed ../../Ref/hg38_centromeres.bed ../../Ref/hg38_gaps.bed ../../Ref/hg38_fix_patches.bed ../../Ref/hg38_alternative_haplotypes.bed 		--step 15 		--CNA_normalization False 		--individual False 		--smoothing True 		--exclude_outliers True 		--exclude_zero_mappability True 		--number_of_sites none 		--sort_by none 		--ascending none 		--CPU 8 
+Removing temporary output file tmp/PAN21_WBC/tmp_pybedtools.
+[Tue Apr 22 07:24:27 2025]
+Finished job 7.
+2 of 10 steps (20%) done
+Submitted job 4 with external jobid 'Submitted batch job 8251071'.
+Removing temporary output file tmp/PAN21/tmp_pybedtools.
+[Tue Apr 22 07:24:27 2025]
+Finished job 6.
+3 of 10 steps (30%) done
+
+[Tue Apr 22 07:24:27 2025]
+rule merge_sites:
+    input: tmp/PAN21_WBC/tmp_bigWig/PAN21_WBC.uncorrected.bw, tmp/PAN21_WBC/tmp_bigWig/PAN21_WBC.GC_corrected.bw
+    output: /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN21_WBC/PAN21_WBC.uncorrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN21_WBC/PAN21_WBC.GC_corrected.coverage.tsv, tmp/PAN21_WBC/tmp_pybedtools2
+    jobid: 2
+    wildcards: samples=PAN21_WBC
+
+time ../../scripts/griffin_merge_sites.py 		--sample_name PAN21_WBC 		--uncorrected_bw_path tmp/PAN21_WBC/tmp_bigWig/PAN21_WBC.uncorrected.bw 		--GC_corrected_bw_path tmp/PAN21_WBC/tmp_bigWig/PAN21_WBC.GC_corrected.bw 		--GC_map_corrected_bw_path none 		--mappability_correction False 		--tmp_dir tmp 		--results_dir /projects/pangen/analysis/hmac/applications/Griffin/test/results 		--mappability_bw ../../Ref/k100.Umap.MultiTrackMappability.bw 		--chrom_sizes_path ../../Ref/hg38.standard.chrom.sizes 		--sites_yaml config/sites.yaml 		--griffin_scripts ../../scripts 		--chrom_column Chrom 		--position_column position 		--strand_column Strand 		--chroms chr1 chr2 chr3 chr4 chr5 chr6 chr7 chr8 chr9 chr10 chr11 chr12 chr13 chr14 chr15 chr16 chr17 chr18 chr19 chr20 chr21 chr22 		--norm_window -5000 5000 		--save_window -1000 1000 		--center_window -30 30 		--fft_window -960 960 		--fft_index 10 		--smoothing_length 165 		--exclude_paths ../../Ref/encode_unified_GRCh38_exclusion_list.bed ../../Ref/hg38_centromeres.bed ../../Ref/hg38_gaps.bed ../../Ref/hg38_fix_patches.bed ../../Ref/hg38_alternative_haplotypes.bed 		--step 15 		--CNA_normalization False 		--individual False 		--smoothing True 		--exclude_outliers True 		--exclude_zero_mappability True 		--number_of_sites none 		--sort_by none 		--ascending none 		--CPU 8 
+Submitted job 2 with external jobid 'Submitted batch job 8251072'.
+Removing temporary output file tmp/PAN27/tmp_pybedtools.
+
+[Tue Apr 22 07:24:27 2025]
+rule merge_sites:
+    input: tmp/PAN21/tmp_bigWig/PAN21.uncorrected.bw, tmp/PAN21/tmp_bigWig/PAN21.GC_corrected.bw
+    output: /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN21/PAN21.uncorrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN21/PAN21.GC_corrected.coverage.tsv, tmp/PAN21/tmp_pybedtools2
+    jobid: 1
+    wildcards: samples=PAN21
+
+time ../../scripts/griffin_merge_sites.py 		--sample_name PAN21 		--uncorrected_bw_path tmp/PAN21/tmp_bigWig/PAN21.uncorrected.bw 		--GC_corrected_bw_path tmp/PAN21/tmp_bigWig/PAN21.GC_corrected.bw 		--GC_map_corrected_bw_path none 		--mappability_correction False 		--tmp_dir tmp 		--results_dir /projects/pangen/analysis/hmac/applications/Griffin/test/results 		--mappability_bw ../../Ref/k100.Umap.MultiTrackMappability.bw 		--chrom_sizes_path ../../Ref/hg38.standard.chrom.sizes 		--sites_yaml config/sites.yaml 		--griffin_scripts ../../scripts 		--chrom_column Chrom 		--position_column position 		--strand_column Strand 		--chroms chr1 chr2 chr3 chr4 chr5 chr6 chr7 chr8 chr9 chr10 chr11 chr12 chr13 chr14 chr15 chr16 chr17 chr18 chr19 chr20 chr21 chr22 		--norm_window -5000 5000 		--save_window -1000 1000 		--center_window -30 30 		--fft_window -960 960 		--fft_index 10 		--smoothing_length 165 		--exclude_paths ../../Ref/encode_unified_GRCh38_exclusion_list.bed ../../Ref/hg38_centromeres.bed ../../Ref/hg38_gaps.bed ../../Ref/hg38_fix_patches.bed ../../Ref/hg38_alternative_haplotypes.bed 		--step 15 		--CNA_normalization False 		--individual False 		--smoothing True 		--exclude_outliers True 		--exclude_zero_mappability True 		--number_of_sites none 		--sort_by none 		--ascending none 		--CPU 8 
+[Tue Apr 22 07:24:27 2025]
+Finished job 8.
+4 of 10 steps (40%) done
+Submitted job 1 with external jobid 'Submitted batch job 8251073'.
+
+[Tue Apr 22 07:24:27 2025]
+rule merge_sites:
+    input: tmp/PAN27/tmp_bigWig/PAN27.uncorrected.bw, tmp/PAN27/tmp_bigWig/PAN27.GC_corrected.bw
+    output: /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN27/PAN27.uncorrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN27/PAN27.GC_corrected.coverage.tsv, tmp/PAN27/tmp_pybedtools2
+    jobid: 3
+    wildcards: samples=PAN27
+
+time ../../scripts/griffin_merge_sites.py 		--sample_name PAN27 		--uncorrected_bw_path tmp/PAN27/tmp_bigWig/PAN27.uncorrected.bw 		--GC_corrected_bw_path tmp/PAN27/tmp_bigWig/PAN27.GC_corrected.bw 		--GC_map_corrected_bw_path none 		--mappability_correction False 		--tmp_dir tmp 		--results_dir /projects/pangen/analysis/hmac/applications/Griffin/test/results 		--mappability_bw ../../Ref/k100.Umap.MultiTrackMappability.bw 		--chrom_sizes_path ../../Ref/hg38.standard.chrom.sizes 		--sites_yaml config/sites.yaml 		--griffin_scripts ../../scripts 		--chrom_column Chrom 		--position_column position 		--strand_column Strand 		--chroms chr1 chr2 chr3 chr4 chr5 chr6 chr7 chr8 chr9 chr10 chr11 chr12 chr13 chr14 chr15 chr16 chr17 chr18 chr19 chr20 chr21 chr22 		--norm_window -5000 5000 		--save_window -1000 1000 		--center_window -30 30 		--fft_window -960 960 		--fft_index 10 		--smoothing_length 165 		--exclude_paths ../../Ref/encode_unified_GRCh38_exclusion_list.bed ../../Ref/hg38_centromeres.bed ../../Ref/hg38_gaps.bed ../../Ref/hg38_fix_patches.bed ../../Ref/hg38_alternative_haplotypes.bed 		--step 15 		--CNA_normalization False 		--individual False 		--smoothing True 		--exclude_outliers True 		--exclude_zero_mappability True 		--number_of_sites none 		--sort_by none 		--ascending none 		--CPU 8 
+Submitted job 3 with external jobid 'Submitted batch job 8251074'.
+Removing temporary output file tmp/PAN27_WBC/tmp_bigWig/PAN27_WBC.uncorrected.bw.
+Removing temporary output file tmp/PAN27_WBC/tmp_bigWig/PAN27_WBC.GC_corrected.bw.
+Removing temporary output file tmp/PAN27_WBC/tmp_pybedtools2.
+[Tue Apr 22 07:30:27 2025]
+Finished job 4.
+5 of 10 steps (50%) done
+Removing temporary output file tmp/PAN21_WBC/tmp_bigWig/PAN21_WBC.GC_corrected.bw.
+Removing temporary output file tmp/PAN21_WBC/tmp_bigWig/PAN21_WBC.uncorrected.bw.
+Removing temporary output file tmp/PAN21_WBC/tmp_pybedtools2.
+[Tue Apr 22 07:30:27 2025]
+Finished job 2.
+6 of 10 steps (60%) done
+Removing temporary output file tmp/PAN21/tmp_bigWig/PAN21.uncorrected.bw.
+Removing temporary output file tmp/PAN21/tmp_bigWig/PAN21.GC_corrected.bw.
+Removing temporary output file tmp/PAN21/tmp_pybedtools2.
+[Tue Apr 22 07:30:27 2025]
+Finished job 1.
+7 of 10 steps (70%) done
+Removing temporary output file tmp/PAN27/tmp_bigWig/PAN27.uncorrected.bw.
+Removing temporary output file tmp/PAN27/tmp_bigWig/PAN27.GC_corrected.bw.
+Removing temporary output file tmp/PAN27/tmp_pybedtools2.
+[Tue Apr 22 07:30:27 2025]
+Finished job 3.
+8 of 10 steps (80%) done
+
+[Tue Apr 22 07:30:27 2025]
+rule generate_plots:
+    input: /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN21/PAN21.uncorrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN21_WBC/PAN21_WBC.uncorrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN27/PAN27.uncorrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN27_WBC/PAN27_WBC.uncorrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN21/PAN21.GC_corrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN21_WBC/PAN21_WBC.GC_corrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN27/PAN27.GC_corrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN27_WBC/PAN27_WBC.GC_corrected.coverage.tsv
+    output: /projects/pangen/analysis/hmac/applications/Griffin/test/results/plots/ACTB.pdf, /projects/pangen/analysis/hmac/applications/Griffin/test/results/plots/GAPDH_1.pdf, /projects/pangen/analysis/hmac/applications/Griffin/test/results/plots/GAPDH_2.pdf, /projects/pangen/analysis/hmac/applications/Griffin/test/results/plots/RPLP0.pdf, /projects/pangen/analysis/hmac/applications/Griffin/test/results/plots/test.pdf
+    jobid: 5
+
+time ../../scripts/griffin_plot.py 		--in_dir /projects/pangen/analysis/hmac/applications/Griffin/test/results 		--samples_yaml config/samples.GC.yaml 		--mappability_correction False 		--save_window -1000 1000 		--step 15 		--individual False 		--out_dir /projects/pangen/analysis/hmac/applications/Griffin/test/results; 		find tmp -type d -empty -delete
+Submitted job 5 with external jobid 'Submitted batch job 8251501'.
+[Tue Apr 22 07:35:28 2025]
+Finished job 5.
+9 of 10 steps (90%) done
+
+[Tue Apr 22 07:35:28 2025]
+localrule all:
+    input: /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN21/PAN21.GC_corrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN21_WBC/PAN21_WBC.GC_corrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN27/PAN27.GC_corrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/PAN27_WBC/PAN27_WBC.GC_corrected.coverage.tsv, /projects/pangen/analysis/hmac/applications/Griffin/test/results/plots/ACTB.pdf, /projects/pangen/analysis/hmac/applications/Griffin/test/results/plots/GAPDH_1.pdf, /projects/pangen/analysis/hmac/applications/Griffin/test/results/plots/GAPDH_2.pdf, /projects/pangen/analysis/hmac/applications/Griffin/test/results/plots/RPLP0.pdf, /projects/pangen/analysis/hmac/applications/Griffin/test/results/plots/test.pdf
+    jobid: 0
+
+[Tue Apr 22 07:35:28 2025]
+Finished job 0.
+10 of 10 steps (100%) done
+Complete log: /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/.snakemake/log/2025-04-22T072355.547416.snakemake.log

@@ -1,0 +1,6 @@
+site_lists:
+    ACTB: /projects/pangen/analysis/hmac/applications/Griffin/test/site_files/ACTB.tsv
+    GAPDH_1: /projects/pangen/analysis/hmac/applications/Griffin/test/site_files/GAPDH_1.tsv
+    GAPDH_2: /projects/pangen/analysis/hmac/applications/Griffin/test/site_files/GAPDH_2.tsv
+    RPLP0: /projects/pangen/analysis/hmac/applications/Griffin/test/site_files/RPLP0.tsv
+    housekeeping: /projects/pangen/analysis/hmac/applications/Griffin/test/site_files/housekeeping.tsv
