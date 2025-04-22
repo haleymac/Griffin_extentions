@@ -10,7 +10,6 @@ It works pretty nicely but is fussy to set up so I wrote some code to make runni
 In this repo I have @adoebley's original repository contents, as well as some additional scripts in haley_scripts that make setting up a griffin run easier. 
 
 
-
 ### Scripts in haley_scripts:
 
 #### grif_gene_TSS.py
