@@ -1,3 +1,5 @@
 samples:
-  sample_name_1: /path/to/sample_1.bam
-  sample_name_2: /path/to/sample_2.bam
+  PAN21: /projects/pangen/analysis/jtopham/fragx/samples/PAN21/PanGen-PAN21-cfDNA-2018Jan04.bam
+  PAN21_WBC: /projects/pangen/analysis/jtopham/fragx/samples/PAN21/PanGen-PAN21-WBC.bam
+  PAN27: /projects/pangen/analysis/jtopham/fragx/samples/PAN27/PanGen-PAN27-cfDNA-2018Mar16.bam
+  PAN27_WBC: /projects/pangen/analysis/jtopham/fragx/samples/PAN27/PanGen-PAN27-WBC.bam
