@@ -1,0 +1,13 @@
+samples:
+  PAN21:
+    bam: /projects/pangen/analysis/jtopham/fragx/samples/PAN21/PanGen-PAN21-cfDNA-2018Jan04.bam
+    GC_bias: /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN21.GC_bias.txt
+  PAN21_WBC:
+    bam: /projects/pangen/analysis/jtopham/fragx/samples/PAN21/PanGen-PAN21-WBC.bam
+    GC_bias: /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN21_WBC.GC_bias.txt
+  PAN27:
+    bam: /projects/pangen/analysis/jtopham/fragx/samples/PAN27/PanGen-PAN27-cfDNA-2018Mar16.bam
+    GC_bias: /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN27.GC_bias.txt
+  PAN27_WBC:
+    bam: /projects/pangen/analysis/jtopham/fragx/samples/PAN27/PanGen-PAN27-WBC.bam
+    GC_bias: /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/GC_bias/PAN27_WBC.GC_bias.txt
