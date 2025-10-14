@@ -1,0 +1,17 @@
+site_lists:
+    adrenal: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/adrenal_unique_peaks.bed
+    colon: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/colon_unique_peaks.bed
+    cpeaks: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/cpeaks_unique_peaks.bed
+
+    heart: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/heart_unique_peaks.bed
+    lung: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/lung_unique_peaks.bed    
+    top100_PAN21: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/top100_unique_peaks.bed
+    bottom_50_PAN21: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/bottom50_unique_peaks.bed
+    liver: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/liver_unique_peaks.bed
+    PDAC: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/PDAC_unique_peaks.bed
+    monocyte: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/monocyte_unique_peaks.bed
+    neutrophil: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/neutrophils_unique_peaks.bed
+    WBC_all: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/WBC_unique_peaks.bed
+    NK: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/NK_unique_peaks.bed
+    T-cell: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/T-cell_shared.bed
+    B_cell: /projects/pangen/analysis/hmac/ATAC_celltype_sites_analysis/access_compar_scratch/comparison/cell_types_compar/inbeds/unique_for_griff/B_cell_unique_peaks.bed

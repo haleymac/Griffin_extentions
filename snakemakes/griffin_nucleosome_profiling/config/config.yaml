@@ -40,7 +40,6 @@ ascending: none #True/False #whether to sort sites in ascending order (False if 
 #additional params for griffin_merge ########
 #############################################
 
-results_dir: results
 
 save_window: -1000 1000 #window around each site to save to outputs
 center_window: -30 30 #range of positions used to calculate the central coverage feature

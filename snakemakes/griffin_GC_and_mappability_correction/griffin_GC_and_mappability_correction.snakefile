@@ -12,7 +12,24 @@ snakemake -s griffin_GC_and_mappability_correction.snakefile --cores 1 -np
 #command to run snakemake on a slurm cluster (remove -np at end when done validating):
 snakemake -s griffin_GC_and_mappability_correction.snakefile --latency-wait 60 --keep-going --cluster-config config/cluster_slurm.yaml --cluster "sbatch -p {cluster.partition} --mem={cluster.mem} -t {cluster.time} -c {cluster.ncpus} -n {cluster.ntasks} -o {cluster.output} -J {cluster.JobName}" -j 40 -np
 
+
+
+# Run the pipeline on our system 
+snakemake \
+  --snakefile griffin_GC_and_mappability_correction.snakefile \
+  --cluster-config config/cluster_slurm.yaml \
+  --latency-wait 60 \
+  --keep-going \
+  -j 40 \
+  --rerun-incomplete \
+  --cluster "sbatch --cpus-per-task={threads}  \
+  			--job-name={rule} \
+             -o /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/logs/cluster/{rule}.%j.out \
+             -e /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/logs/cluster/{rule}.%j.err"
+
 """
+
+
 
 configfile: "config/samples.yaml"
 configfile: "config/config.yaml"

@@ -56,6 +56,41 @@ def parse_args():
 # -----------------------------
 # STEP 1: MAKE GENE INPUT TSVS
 # -----------------------------
+
+def make_gene_input_tsvs_with_reftss(gene_list, output_dir, outfile):
+    os.makedirs(output_dir, exist_ok=True)
+    os.makedirs('logs/cluster', exist_ok=True)
+    gtf = pd.read_csv('/projects/pangen/analysis/hmac/reference/hg38_ref/refTSS_v4.1_hg38_best_transcript.bed', sep='\t', names = ['Chrom', 'Start', 'End', 'Strand', 'a', 'USCS_alias', 'Gene', 'ensembl_id', 'best_transcript'])
+    
+    chroms = [f"chr{i}" for i in range(1, 23)] + ["chrX", "chrY"]
+    df = gtf[gtf['Gene'].isin(gene_list) & gtf['Chrom'].isin(chroms)]
+    df = df[['Chrom', 'Start', 'End', 'Gene', 'Strand']]
+    df = df.drop_duplicates()
+    df['End'] = df['Start'] + 1
+    df['position'] = df['Start']
+    df['uniprotId'] = 'unknown'
+    column_order = ["Chrom", "Start", "End", "uniprotId", "Gene", "position", 'Strand']
+    df = df[column_order].drop_duplicates()
+    gene_counts = df["Gene"].value_counts()
+    gene_counter = {}
+
+    def rename_gene(gene):
+        if gene_counts[gene] > 1:
+            gene_counter[gene] = gene_counter.get(gene, 0) + 1
+            return f"{gene}_{gene_counter[gene]}"
+        else:
+            return gene
+
+    df["Gene"] = df["Gene"].apply(rename_gene)
+
+    for _, row in df.iterrows():
+        row_df = pd.DataFrame([row])
+        row_df.to_csv(os.path.join(output_dir, f"{row['Gene']}.tsv"), sep='\t', index=False)
+
+    df.to_csv(f"{output_dir}/{outfile}", sep="\t", index=False)
+    return df
+
+
 def make_gene_input_tsvs(gene_list, output_dir, outfile):
     os.makedirs(output_dir, exist_ok=True)
     os.makedirs('logs/cluster', exist_ok=True)
@@ -87,6 +122,8 @@ def make_gene_input_tsvs(gene_list, output_dir, outfile):
 
     df.to_csv(f"{output_dir}/{outfile}", sep="\t", index=False)
     return df
+
+
 
 # -----------------------------
 # STEP 2: WRITE sites.yaml in /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling
@@ -145,7 +182,7 @@ def run_snakemake():
         "--keep-going",
         "--rerun-incomplete",
         "--cluster-config", "/projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/config/cluster_slurm.yaml",
-        "--cluster", "sbatch --mem={cluster.mem} -t {cluster.time} -c {cluster.ncpus} -n {cluster.ntasks} -o {cluster.output} -J {cluster.JobName}",
+        "--cluster", "sbatch --mem={cluster.mem} -c {cluster.ncpus} -n {cluster.ntasks} -o {cluster.output} -J {cluster.JobName}",
         "-j", "40"
     ]
     subprocess.run(cmd, check=True)

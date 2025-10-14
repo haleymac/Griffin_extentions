@@ -9,7 +9,16 @@
 snakemake -s griffin_nucleosome_profiling.snakefile --cores 1 -np
 
 #command to run snakemake on a slurm cluster (remove -np at end when done validating):
-snakemake -s griffin_nucleosome_profiling.snakefile --latency-wait 60 --keep-going --cluster-config config/cluster_slurm.yaml --cluster "sbatch -p {cluster.partition} --mem={cluster.mem} -t {cluster.time} -c {cluster.ncpus} -n {cluster.ntasks} -o {cluster.output} -J {cluster.JobName}" -j 40 -np
+snakemake -s griffin_nucleosome_profiling.snakefile --latency-wait 60 --keep-going --cluster-config config/cluster_slurm.yaml --cluster "sbatch --mem={cluster.mem} -t {cluster.time} -c {cluster.ncpus} -n {cluster.ntasks} -o {cluster.output} -J {cluster.JobName}" -j 40 -np
+
+
+snakemake -s griffin_nucleosome_profiling.snakefile \
+  --latency-wait 60 \
+  --keep-going \
+  --cluster-config config/cluster_slurm.yaml \
+  --cluster "sbatch --mem={cluster.mem} -c {cluster.ncpus} -n {cluster.ntasks} -o {cluster.output} -J {cluster.JobName}" \
+  -j 40
+
 
 """
 

@@ -1,0 +1,1856 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 40
+Job counts:
+	count	jobs
+	75	GC_bias
+	75	GC_counts
+	1	all
+	1	make_samples_yaml
+	152
+
+[Thu Oct  9 11:27:03 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1126/frag/bams/POG1126-cfDNA.bam
+    output: results/GC_counts/POG1126.GC_counts.txt
+    jobid: 14
+    wildcards: out_dir=results, samples=POG1126
+
+Submitted job 14 with external jobid 'Submitted batch job 18245950'.
+
+[Thu Oct  9 11:27:03 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1011/frag/bams/POG1011-cfDNA.bam
+    output: results/GC_counts/POG1011.GC_counts.txt
+    jobid: 23
+    wildcards: out_dir=results, samples=POG1011
+
+Submitted job 23 with external jobid 'Submitted batch job 18245951'.
+
+[Thu Oct  9 11:27:03 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1801/frag/bams/POG1801-cfDNA.bam
+    output: results/GC_counts/POG1801.GC_counts.txt
+    jobid: 57
+    wildcards: out_dir=results, samples=POG1801
+
+Submitted job 57 with external jobid 'Submitted batch job 18245952'.
+
+[Thu Oct  9 11:27:03 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1136/frag/bams/POG1136-cfDNA.bam
+    output: results/GC_counts/POG1136.GC_counts.txt
+    jobid: 47
+    wildcards: out_dir=results, samples=POG1136
+
+Submitted job 47 with external jobid 'Submitted batch job 18245953'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG969/frag/bams/POG969-cfDNA.bam
+    output: results/GC_counts/POG969.GC_counts.txt
+    jobid: 41
+    wildcards: out_dir=results, samples=POG969
+
+Submitted job 41 with external jobid 'Submitted batch job 18245954'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN103/frag/bams/PAN103-cfDNA.bam
+    output: results/GC_counts/PAN103.GC_counts.txt
+    jobid: 3
+    wildcards: out_dir=results, samples=PAN103
+
+Submitted job 3 with external jobid 'Submitted batch job 18245955'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN061/frag/bams/PAN061-cfDNA.bam
+    output: results/GC_counts/PAN061.GC_counts.txt
+    jobid: 5
+    wildcards: out_dir=results, samples=PAN061
+
+Submitted job 5 with external jobid 'Submitted batch job 18245956'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1291/frag/bams/POG1291-cfDNA.bam
+    output: results/GC_counts/POG1291.GC_counts.txt
+    jobid: 73
+    wildcards: out_dir=results, samples=POG1291
+
+Submitted job 73 with external jobid 'Submitted batch job 18245957'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN067/frag/bams/PAN067-cfDNA.bam
+    output: results/GC_counts/PAN067.GC_counts.txt
+    jobid: 35
+    wildcards: out_dir=results, samples=PAN067
+
+Submitted job 35 with external jobid 'Submitted batch job 18245958'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG2015/frag/bams/POG2015-cfDNA.bam
+    output: results/GC_counts/POG2015.GC_counts.txt
+    jobid: 54
+    wildcards: out_dir=results, samples=POG2015
+
+Submitted job 54 with external jobid 'Submitted batch job 18245959'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1151/frag/bams/POG1151-cfDNA.bam
+    output: results/GC_counts/POG1151.GC_counts.txt
+    jobid: 61
+    wildcards: out_dir=results, samples=POG1151
+
+Submitted job 61 with external jobid 'Submitted batch job 18245960'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1071/frag/bams/POG1071-cfDNA.bam
+    output: results/GC_counts/POG1071.GC_counts.txt
+    jobid: 68
+    wildcards: out_dir=results, samples=POG1071
+
+Submitted job 68 with external jobid 'Submitted batch job 18245961'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1129/frag/bams/POG1129-cfDNA.bam
+    output: results/GC_counts/POG1129.GC_counts.txt
+    jobid: 66
+    wildcards: out_dir=results, samples=POG1129
+
+Submitted job 66 with external jobid 'Submitted batch job 18245962'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1757/frag/bams/POG1757-cfDNA.bam
+    output: results/GC_counts/POG1757.GC_counts.txt
+    jobid: 25
+    wildcards: out_dir=results, samples=POG1757
+
+Submitted job 25 with external jobid 'Submitted batch job 18245963'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1093/frag/bams/POG1093-cfDNA.bam
+    output: results/GC_counts/POG1093.GC_counts.txt
+    jobid: 16
+    wildcards: out_dir=results, samples=POG1093
+
+Submitted job 16 with external jobid 'Submitted batch job 18245964'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1049/frag/bams/POG1049-cfDNA.bam
+    output: results/GC_counts/POG1049.GC_counts.txt
+    jobid: 22
+    wildcards: out_dir=results, samples=POG1049
+
+Submitted job 22 with external jobid 'Submitted batch job 18245965'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1199/frag/bams/POG1199-cfDNA.bam
+    output: results/GC_counts/POG1199.GC_counts.txt
+    jobid: 28
+    wildcards: out_dir=results, samples=POG1199
+
+Submitted job 28 with external jobid 'Submitted batch job 18245966'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG2048/frag/bams/POG2048-cfDNA.bam
+    output: results/GC_counts/POG2048.GC_counts.txt
+    jobid: 55
+    wildcards: out_dir=results, samples=POG2048
+
+Submitted job 55 with external jobid 'Submitted batch job 18245967'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG998/frag/bams/POG998-cfDNA.bam
+    output: results/GC_counts/POG998.GC_counts.txt
+    jobid: 69
+    wildcards: out_dir=results, samples=POG998
+
+Submitted job 69 with external jobid 'Submitted batch job 18245968'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN097/frag/bams/PAN097-cfDNA.bam
+    output: results/GC_counts/PAN097.GC_counts.txt
+    jobid: 70
+    wildcards: out_dir=results, samples=PAN097
+
+Submitted job 70 with external jobid 'Submitted batch job 18245969'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1272/frag/bams/POG1272-cfDNA.bam
+    output: results/GC_counts/POG1272.GC_counts.txt
+    jobid: 44
+    wildcards: out_dir=results, samples=POG1272
+
+Submitted job 44 with external jobid 'Submitted batch job 18245970'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN069/frag/bams/PAN069-cfDNA.bam
+    output: results/GC_counts/PAN069.GC_counts.txt
+    jobid: 48
+    wildcards: out_dir=results, samples=PAN069
+
+Submitted job 48 with external jobid 'Submitted batch job 18245971'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1072/frag/bams/POG1072-cfDNA.bam
+    output: results/GC_counts/POG1072.GC_counts.txt
+    jobid: 64
+    wildcards: out_dir=results, samples=POG1072
+
+Submitted job 64 with external jobid 'Submitted batch job 18245972'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1651/frag/bams/POG1651-cfDNA.bam
+    output: results/GC_counts/POG1651.GC_counts.txt
+    jobid: 10
+    wildcards: out_dir=results, samples=POG1651
+
+Submitted job 10 with external jobid 'Submitted batch job 18245973'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG966/frag/bams/POG966-cfDNA.bam
+    output: results/GC_counts/POG966.GC_counts.txt
+    jobid: 17
+    wildcards: out_dir=results, samples=POG966
+
+Submitted job 17 with external jobid 'Submitted batch job 18245974'.
+
+[Thu Oct  9 11:27:04 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1083/frag/bams/POG1083-cfDNA.bam
+    output: results/GC_counts/POG1083.GC_counts.txt
+    jobid: 39
+    wildcards: out_dir=results, samples=POG1083
+
+Submitted job 39 with external jobid 'Submitted batch job 18245975'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1132/frag/bams/POG1132-cfDNA.bam
+    output: results/GC_counts/POG1132.GC_counts.txt
+    jobid: 40
+    wildcards: out_dir=results, samples=POG1132
+
+Submitted job 40 with external jobid 'Submitted batch job 18245976'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG757/frag/bams/POG757-cfDNA.bam
+    output: results/GC_counts/POG757.GC_counts.txt
+    jobid: 65
+    wildcards: out_dir=results, samples=POG757
+
+Submitted job 65 with external jobid 'Submitted batch job 18245977'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN076/frag/bams/PAN076-cfDNA.bam
+    output: results/GC_counts/PAN076.GC_counts.txt
+    jobid: 6
+    wildcards: out_dir=results, samples=PAN076
+
+Submitted job 6 with external jobid 'Submitted batch job 18245978'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1725/frag/bams/POG1725-cfDNA.bam
+    output: results/GC_counts/POG1725.GC_counts.txt
+    jobid: 29
+    wildcards: out_dir=results, samples=POG1725
+
+Submitted job 29 with external jobid 'Submitted batch job 18245979'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN054/frag/bams/PAN054-cfDNA.bam
+    output: results/GC_counts/PAN054.GC_counts.txt
+    jobid: 20
+    wildcards: out_dir=results, samples=PAN054
+
+Submitted job 20 with external jobid 'Submitted batch job 18245980'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG2046/frag/bams/POG2046-cfDNA.bam
+    output: results/GC_counts/POG2046.GC_counts.txt
+    jobid: 53
+    wildcards: out_dir=results, samples=POG2046
+
+Submitted job 53 with external jobid 'Submitted batch job 18245981'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN106/frag/bams/PAN106-cfDNA.bam
+    output: results/GC_counts/PAN106.GC_counts.txt
+    jobid: 34
+    wildcards: out_dir=results, samples=PAN106
+
+Submitted job 34 with external jobid 'Submitted batch job 18245982'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1008/frag/bams/POG1008-cfDNA.bam
+    output: results/GC_counts/POG1008.GC_counts.txt
+    jobid: 38
+    wildcards: out_dir=results, samples=POG1008
+
+Submitted job 38 with external jobid 'Submitted batch job 18245983'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN074/frag/bams/PAN074-cfDNA.bam
+    output: results/GC_counts/PAN074.GC_counts.txt
+    jobid: 43
+    wildcards: out_dir=results, samples=PAN074
+
+Submitted job 43 with external jobid 'Submitted batch job 18245984'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN115/frag/bams/PAN115-cfDNA.bam
+    output: results/GC_counts/PAN115.GC_counts.txt
+    jobid: 58
+    wildcards: out_dir=results, samples=PAN115
+
+Submitted job 58 with external jobid 'Submitted batch job 18245985'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1018/frag/bams/POG1018-cfDNA.bam
+    output: results/GC_counts/POG1018.GC_counts.txt
+    jobid: 45
+    wildcards: out_dir=results, samples=POG1018
+
+Submitted job 45 with external jobid 'Submitted batch job 18245986'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1006/frag/bams/POG1006-cfDNA.bam
+    output: results/GC_counts/POG1006.GC_counts.txt
+    jobid: 27
+    wildcards: out_dir=results, samples=POG1006
+
+Submitted job 27 with external jobid 'Submitted batch job 18245987'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1131/frag/bams/POG1131-cfDNA.bam
+    output: results/GC_counts/POG1131.GC_counts.txt
+    jobid: 63
+    wildcards: out_dir=results, samples=POG1131
+
+Submitted job 63 with external jobid 'Submitted batch job 18245988'.
+
+[Thu Oct  9 11:27:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1145/frag/bams/POG1145-cfDNA.bam
+    output: results/GC_counts/POG1145.GC_counts.txt
+    jobid: 1
+    wildcards: out_dir=results, samples=POG1145
+
+Submitted job 1 with external jobid 'Submitted batch job 18245989'.
+Write-protecting output file results/GC_counts/POG1272.GC_counts.txt.
+[Thu Oct  9 17:40:46 2025]
+Finished job 44.
+1 of 152 steps (0.66%) done
+
+[Thu Oct  9 17:40:46 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1764/frag/bams/POG1764-cfDNA.bam
+    output: results/GC_counts/POG1764.GC_counts.txt
+    jobid: 11
+    wildcards: out_dir=results, samples=POG1764
+
+Submitted job 11 with external jobid 'Submitted batch job 18258539'.
+Write-protecting output file results/GC_counts/POG966.GC_counts.txt.
+[Thu Oct  9 17:47:18 2025]
+Finished job 17.
+2 of 152 steps (1%) done
+
+[Thu Oct  9 17:47:18 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1108/frag/bams/POG1108-cfDNA.bam
+    output: results/GC_counts/POG1108.GC_counts.txt
+    jobid: 56
+    wildcards: out_dir=results, samples=POG1108
+
+Submitted job 56 with external jobid 'Submitted batch job 18258585'.
+Write-protecting output file results/GC_counts/PAN061.GC_counts.txt.
+[Thu Oct  9 17:58:29 2025]
+Finished job 5.
+3 of 152 steps (2%) done
+
+[Thu Oct  9 17:58:29 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN051/frag/bams/PAN051-cfDNA.bam
+    output: results/GC_counts/PAN051.GC_counts.txt
+    jobid: 62
+    wildcards: out_dir=results, samples=PAN051
+
+Submitted job 62 with external jobid 'Submitted batch job 18258699'.
+Write-protecting output file results/GC_counts/POG2048.GC_counts.txt.
+[Thu Oct  9 18:01:32 2025]
+Finished job 55.
+4 of 152 steps (3%) done
+
+[Thu Oct  9 18:01:32 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN090/frag/bams/PAN090-cfDNA.bam
+    output: results/GC_counts/PAN090.GC_counts.txt
+    jobid: 13
+    wildcards: out_dir=results, samples=PAN090
+
+Submitted job 13 with external jobid 'Submitted batch job 18258734'.
+Write-protecting output file results/GC_counts/POG1011.GC_counts.txt.
+[Thu Oct  9 18:01:45 2025]
+Finished job 23.
+5 of 152 steps (3%) done
+
+[Thu Oct  9 18:01:45 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN042/frag/bams/PAN042-cfDNA.bam
+    output: results/GC_counts/PAN042.GC_counts.txt
+    jobid: 52
+    wildcards: out_dir=results, samples=PAN042
+
+Submitted job 52 with external jobid 'Submitted batch job 18258741'.
+Write-protecting output file results/GC_counts/POG1651.GC_counts.txt.
+[Thu Oct  9 18:07:09 2025]
+Finished job 10.
+6 of 152 steps (4%) done
+
+[Thu Oct  9 18:07:09 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1096/frag/bams/POG1096-cfDNA.bam
+    output: results/GC_counts/POG1096.GC_counts.txt
+    jobid: 50
+    wildcards: out_dir=results, samples=POG1096
+
+Submitted job 50 with external jobid 'Submitted batch job 18258895'.
+Write-protecting output file results/GC_counts/POG1083.GC_counts.txt.
+[Thu Oct  9 18:09:02 2025]
+Finished job 39.
+7 of 152 steps (5%) done
+
+[Thu Oct  9 18:09:02 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG920/frag/bams/POG920-cfDNA.bam
+    output: results/GC_counts/POG920.GC_counts.txt
+    jobid: 46
+    wildcards: out_dir=results, samples=POG920
+
+Submitted job 46 with external jobid 'Submitted batch job 18258913'.
+Write-protecting output file results/GC_counts/POG1049.GC_counts.txt.
+[Thu Oct  9 18:15:34 2025]
+Finished job 22.
+8 of 152 steps (5%) done
+
+[Thu Oct  9 18:15:34 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1009/frag/bams/POG1009-cfDNA.bam
+    output: results/GC_counts/POG1009.GC_counts.txt
+    jobid: 4
+    wildcards: out_dir=results, samples=POG1009
+
+Submitted job 4 with external jobid 'Submitted batch job 18259054'.
+Write-protecting output file results/GC_counts/POG1006.GC_counts.txt.
+[Thu Oct  9 18:15:49 2025]
+Finished job 27.
+9 of 152 steps (6%) done
+
+[Thu Oct  9 18:15:49 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1057/frag/bams/POG1057-cfDNA.bam
+    output: results/GC_counts/POG1057.GC_counts.txt
+    jobid: 7
+    wildcards: out_dir=results, samples=POG1057
+
+Submitted job 7 with external jobid 'Submitted batch job 18259055'.
+Write-protecting output file results/GC_counts/POG1018.GC_counts.txt.
+[Thu Oct  9 18:29:50 2025]
+Finished job 45.
+10 of 152 steps (7%) done
+
+[Thu Oct  9 18:29:50 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG949/frag/bams/POG949-cfDNA.bam
+    output: results/GC_counts/POG949.GC_counts.txt
+    jobid: 21
+    wildcards: out_dir=results, samples=POG949
+
+Submitted job 21 with external jobid 'Submitted batch job 18259187'.
+Write-protecting output file results/GC_counts/POG969.GC_counts.txt.
+[Thu Oct  9 18:30:30 2025]
+Finished job 41.
+11 of 152 steps (7%) done
+
+[Thu Oct  9 18:30:30 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG798/frag/bams/POG798-cfDNA.bam
+    output: results/GC_counts/POG798.GC_counts.txt
+    jobid: 60
+    wildcards: out_dir=results, samples=POG798
+
+Submitted job 60 with external jobid 'Submitted batch job 18259197'.
+Write-protecting output file results/GC_counts/POG1199.GC_counts.txt.
+[Thu Oct  9 18:32:23 2025]
+Finished job 28.
+12 of 152 steps (8%) done
+
+[Thu Oct  9 18:32:23 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG710/frag/bams/POG710-cfDNA.bam
+    output: results/GC_counts/POG710.GC_counts.txt
+    jobid: 42
+    wildcards: out_dir=results, samples=POG710
+
+Submitted job 42 with external jobid 'Submitted batch job 18259239'.
+Write-protecting output file results/GC_counts/PAN074.GC_counts.txt.
+[Thu Oct  9 18:41:17 2025]
+Finished job 43.
+13 of 152 steps (9%) done
+
+[Thu Oct  9 18:41:17 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG914/frag/bams/POG914-cfDNA.bam
+    output: results/GC_counts/POG914.GC_counts.txt
+    jobid: 33
+    wildcards: out_dir=results, samples=POG914
+
+Submitted job 33 with external jobid 'Submitted batch job 18259403'.
+Write-protecting output file results/GC_counts/POG1145.GC_counts.txt.
+[Thu Oct  9 18:44:47 2025]
+Finished job 1.
+14 of 152 steps (9%) done
+
+[Thu Oct  9 18:44:47 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG955/frag/bams/POG955-cfDNA.bam
+    output: results/GC_counts/POG955.GC_counts.txt
+    jobid: 8
+    wildcards: out_dir=results, samples=POG955
+
+Submitted job 8 with external jobid 'Submitted batch job 18259481'.
+Write-protecting output file results/GC_counts/POG1801.GC_counts.txt.
+[Thu Oct  9 18:49:25 2025]
+Finished job 57.
+15 of 152 steps (10%) done
+
+[Thu Oct  9 18:49:25 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN047/frag/bams/PAN047-cfDNA.bam
+    output: results/GC_counts/PAN047.GC_counts.txt
+    jobid: 32
+    wildcards: out_dir=results, samples=PAN047
+
+Submitted job 32 with external jobid 'Submitted batch job 18259782'.
+Write-protecting output file results/GC_counts/PAN103.GC_counts.txt.
+[Thu Oct  9 19:04:08 2025]
+Finished job 3.
+16 of 152 steps (11%) done
+
+[Thu Oct  9 19:04:08 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1003/frag/bams/POG1003-cfDNA.bam
+    output: results/GC_counts/POG1003.GC_counts.txt
+    jobid: 51
+    wildcards: out_dir=results, samples=POG1003
+
+Submitted job 51 with external jobid 'Submitted batch job 18260135'.
+Write-protecting output file results/GC_counts/PAN069.GC_counts.txt.
+[Thu Oct  9 19:13:02 2025]
+Finished job 48.
+17 of 152 steps (11%) done
+
+[Thu Oct  9 19:13:02 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG793/frag/bams/POG793-cfDNA.bam
+    output: results/GC_counts/POG793.GC_counts.txt
+    jobid: 2
+    wildcards: out_dir=results, samples=POG793
+
+Submitted job 2 with external jobid 'Submitted batch job 18260346'.
+Write-protecting output file results/GC_counts/PAN067.GC_counts.txt.
+[Thu Oct  9 19:13:57 2025]
+Finished job 35.
+18 of 152 steps (12%) done
+
+[Thu Oct  9 19:13:57 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1146/frag/bams/POG1146-cfDNA.bam
+    output: results/GC_counts/POG1146.GC_counts.txt
+    jobid: 67
+    wildcards: out_dir=results, samples=POG1146
+
+Submitted job 67 with external jobid 'Submitted batch job 18260449'.
+Write-protecting output file results/GC_counts/POG1126.GC_counts.txt.
+[Thu Oct  9 19:40:49 2025]
+Finished job 14.
+19 of 152 steps (12%) done
+
+[Thu Oct  9 19:40:49 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1181/frag/bams/POG1181-cfDNA.bam
+    output: results/GC_counts/POG1181.GC_counts.txt
+    jobid: 59
+    wildcards: out_dir=results, samples=POG1181
+
+Submitted job 59 with external jobid 'Submitted batch job 18260604'.
+Write-protecting output file results/GC_counts/POG1291.GC_counts.txt.
+[Thu Oct  9 19:53:12 2025]
+Finished job 73.
+20 of 152 steps (13%) done
+
+[Thu Oct  9 19:53:12 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG811/frag/bams/POG811-cfDNA.bam
+    output: results/GC_counts/POG811.GC_counts.txt
+    jobid: 37
+    wildcards: out_dir=results, samples=POG811
+
+Submitted job 37 with external jobid 'Submitted batch job 18260742'.
+Write-protecting output file results/GC_counts/POG1072.GC_counts.txt.
+[Thu Oct  9 20:12:36 2025]
+Finished job 64.
+21 of 152 steps (14%) done
+
+[Thu Oct  9 20:12:36 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1067/frag/bams/POG1067-cfDNA.bam
+    output: results/GC_counts/POG1067.GC_counts.txt
+    jobid: 49
+    wildcards: out_dir=results, samples=POG1067
+
+Submitted job 49 with external jobid 'Submitted batch job 18260847'.
+Write-protecting output file results/GC_counts/POG1131.GC_counts.txt.
+[Thu Oct  9 20:29:40 2025]
+Finished job 63.
+22 of 152 steps (14%) done
+
+[Thu Oct  9 20:29:40 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1391/frag/bams/POG1391-cfDNA.bam
+    output: results/GC_counts/POG1391.GC_counts.txt
+    jobid: 26
+    wildcards: out_dir=results, samples=POG1391
+
+Submitted job 26 with external jobid 'Submitted batch job 18260949'.
+Write-protecting output file results/GC_counts/PAN097.GC_counts.txt.
+[Thu Oct  9 21:01:11 2025]
+Finished job 70.
+23 of 152 steps (15%) done
+
+[Thu Oct  9 21:01:11 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN081/frag/bams/PAN081-cfDNA.bam
+    output: results/GC_counts/PAN081.GC_counts.txt
+    jobid: 15
+    wildcards: out_dir=results, samples=PAN081
+
+Submitted job 15 with external jobid 'Submitted batch job 18261198'.
+Write-protecting output file results/GC_counts/POG2046.GC_counts.txt.
+[Thu Oct  9 22:04:58 2025]
+Finished job 53.
+24 of 152 steps (16%) done
+
+[Thu Oct  9 22:04:58 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1020/frag/bams/POG1020-cfDNA.bam
+    output: results/GC_counts/POG1020.GC_counts.txt
+    jobid: 9
+    wildcards: out_dir=results, samples=POG1020
+
+Submitted job 9 with external jobid 'Submitted batch job 18261587'.
+Write-protecting output file results/GC_counts/POG1151.GC_counts.txt.
+[Thu Oct  9 22:07:17 2025]
+Finished job 61.
+25 of 152 steps (16%) done
+
+[Thu Oct  9 22:07:17 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1000/frag/bams/POG1000-cfDNA.bam
+    output: results/GC_counts/POG1000.GC_counts.txt
+    jobid: 18
+    wildcards: out_dir=results, samples=POG1000
+
+Submitted job 18 with external jobid 'Submitted batch job 18261630'.
+Write-protecting output file results/GC_counts/POG1071.GC_counts.txt.
+[Thu Oct  9 22:16:10 2025]
+Finished job 68.
+26 of 152 steps (17%) done
+
+[Thu Oct  9 22:16:10 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1713/frag/bams/POG1713-cfDNA.bam
+    output: results/GC_counts/POG1713.GC_counts.txt
+    jobid: 74
+    wildcards: out_dir=results, samples=POG1713
+
+Write-protecting output file results/GC_counts/PAN076.GC_counts.txt.
+[Thu Oct  9 22:16:10 2025]
+Finished job 6.
+27 of 152 steps (18%) done
+Submitted job 74 with external jobid 'Submitted batch job 18261695'.
+
+[Thu Oct  9 22:16:10 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1195/frag/bams/POG1195-cfDNA.bam
+    output: results/GC_counts/POG1195.GC_counts.txt
+    jobid: 71
+    wildcards: out_dir=results, samples=POG1195
+
+Submitted job 71 with external jobid 'Submitted batch job 18261696'.
+Write-protecting output file results/GC_counts/PAN106.GC_counts.txt.
+[Thu Oct  9 22:42:35 2025]
+Finished job 34.
+28 of 152 steps (18%) done
+
+[Thu Oct  9 22:42:35 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/PAN044/frag/bams/PAN044-cfDNA.bam
+    output: results/GC_counts/PAN044.GC_counts.txt
+    jobid: 30
+    wildcards: out_dir=results, samples=PAN044
+
+Submitted job 30 with external jobid 'Submitted batch job 18262865'.
+Write-protecting output file results/GC_counts/POG2015.GC_counts.txt.
+[Thu Oct  9 22:47:14 2025]
+Finished job 54.
+29 of 152 steps (19%) done
+
+[Thu Oct  9 22:47:14 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1147/frag/bams/POG1147-cfDNA.bam
+    output: results/GC_counts/POG1147.GC_counts.txt
+    jobid: 75
+    wildcards: out_dir=results, samples=POG1147
+
+Submitted job 75 with external jobid 'Submitted batch job 18262886'.
+Write-protecting output file results/GC_counts/POG1093.GC_counts.txt.
+[Thu Oct  9 22:50:16 2025]
+Finished job 16.
+30 of 152 steps (20%) done
+
+[Thu Oct  9 22:50:16 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG878/frag/bams/POG878-cfDNA.bam
+    output: results/GC_counts/POG878.GC_counts.txt
+    jobid: 19
+    wildcards: out_dir=results, samples=POG878
+
+Submitted job 19 with external jobid 'Submitted batch job 18262919'.
+Write-protecting output file results/GC_counts/POG1757.GC_counts.txt.
+[Thu Oct  9 23:10:49 2025]
+Finished job 25.
+31 of 152 steps (20%) done
+
+[Thu Oct  9 23:10:49 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1804/frag/bams/POG1804-cfDNA.bam
+    output: results/GC_counts/POG1804.GC_counts.txt
+    jobid: 24
+    wildcards: out_dir=results, samples=POG1804
+
+Submitted job 24 with external jobid 'Submitted batch job 18263020'.
+Write-protecting output file results/GC_counts/PAN047.GC_counts.txt.
+[Thu Oct  9 23:45:23 2025]
+Finished job 32.
+32 of 152 steps (21%) done
+
+[Thu Oct  9 23:45:23 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1099/frag/bams/POG1099-cfDNA.bam
+    output: results/GC_counts/POG1099.GC_counts.txt
+    jobid: 36
+    wildcards: out_dir=results, samples=POG1099
+
+Submitted job 36 with external jobid 'Submitted batch job 18263207'.
+Write-protecting output file results/GC_counts/PAN042.GC_counts.txt.
+[Thu Oct  9 23:53:05 2025]
+Finished job 52.
+33 of 152 steps (22%) done
+
+[Thu Oct  9 23:53:05 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1156/frag/bams/POG1156-cfDNA.bam
+    output: results/GC_counts/POG1156.GC_counts.txt
+    jobid: 72
+    wildcards: out_dir=results, samples=POG1156
+
+Submitted job 72 with external jobid 'Submitted batch job 18263256'.
+Write-protecting output file results/GC_counts/POG920.GC_counts.txt.
+[Thu Oct  9 23:58:28 2025]
+Finished job 46.
+34 of 152 steps (22%) done
+
+[Thu Oct  9 23:58:28 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1135/frag/bams/POG1135-cfDNA.bam
+    output: results/GC_counts/POG1135.GC_counts.txt
+    jobid: 12
+    wildcards: out_dir=results, samples=POG1135
+
+Submitted job 12 with external jobid 'Submitted batch job 18263289'.
+Write-protecting output file results/GC_counts/POG1096.GC_counts.txt.
+[Fri Oct 10 00:08:30 2025]
+Finished job 50.
+35 of 152 steps (23%) done
+
+[Fri Oct 10 00:08:30 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1279/frag/bams/POG1279-cfDNA.bam
+    output: results/GC_counts/POG1279.GC_counts.txt
+    jobid: 31
+    wildcards: out_dir=results, samples=POG1279
+
+Submitted job 31 with external jobid 'Submitted batch job 18263364'.
+Write-protecting output file results/GC_counts/PAN090.GC_counts.txt.
+[Fri Oct 10 00:08:31 2025]
+Finished job 13.
+36 of 152 steps (24%) done
+
+[Fri Oct 10 00:08:31 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1291.GC_counts.txt
+    output: results/GC_bias/POG1291.GC_bias.txt, results/GC_plots/POG1291.GC_bias.summary.pdf
+    jobid: 148
+    wildcards: out_dir=results, samples=POG1291
+
+Submitted job 148 with external jobid 'Submitted batch job 18263365'.
+Write-protecting output file results/GC_counts/POG1725.GC_counts.txt.
+[Fri Oct 10 00:12:44 2025]
+Finished job 29.
+37 of 152 steps (24%) done
+
+[Fri Oct 10 00:12:44 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1801.GC_counts.txt
+    output: results/GC_bias/POG1801.GC_bias.txt, results/GC_plots/POG1801.GC_bias.summary.pdf
+    jobid: 132
+    wildcards: out_dir=results, samples=POG1801
+
+Submitted job 132 with external jobid 'Submitted batch job 18263395'.
+Write-protecting output file results/GC_counts/POG1009.GC_counts.txt.
+[Fri Oct 10 00:14:36 2025]
+Finished job 4.
+38 of 152 steps (25%) done
+
+[Fri Oct 10 00:14:36 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1131.GC_counts.txt
+    output: results/GC_bias/POG1131.GC_bias.txt, results/GC_plots/POG1131.GC_bias.summary.pdf
+    jobid: 138
+    wildcards: out_dir=results, samples=POG1131
+
+Submitted job 138 with external jobid 'Submitted batch job 18263432'.
+Write-protecting output file results/GC_counts/POG710.GC_counts.txt.
+[Fri Oct 10 00:16:28 2025]
+Finished job 42.
+39 of 152 steps (26%) done
+
+[Fri Oct 10 00:16:28 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1272.GC_counts.txt
+    output: results/GC_bias/POG1272.GC_bias.txt, results/GC_plots/POG1272.GC_bias.summary.pdf
+    jobid: 119
+    wildcards: out_dir=results, samples=POG1272
+
+Submitted job 119 with external jobid 'Submitted batch job 18263447'.
+Write-protecting output file results/GC_counts/PAN054.GC_counts.txt.
+[Fri Oct 10 00:19:31 2025]
+Finished job 20.
+40 of 152 steps (26%) done
+
+[Fri Oct 10 00:19:31 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1011.GC_counts.txt
+    output: results/GC_bias/POG1011.GC_bias.txt, results/GC_plots/POG1011.GC_bias.summary.pdf
+    jobid: 98
+    wildcards: out_dir=results, samples=POG1011
+
+Submitted job 98 with external jobid 'Submitted batch job 18263466'.
+Write-protecting output file results/GC_counts/POG949.GC_counts.txt.
+[Fri Oct 10 00:20:13 2025]
+Finished job 21.
+41 of 152 steps (27%) done
+
+[Fri Oct 10 00:20:13 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN103.GC_counts.txt
+    output: results/GC_bias/PAN103.GC_bias.txt, results/GC_plots/PAN103.GC_bias.summary.pdf
+    jobid: 78
+    wildcards: out_dir=results, samples=PAN103
+
+Submitted job 78 with external jobid 'Submitted batch job 18263478'.
+[Fri Oct 10 00:20:52 2025]
+Finished job 148.
+42 of 152 steps (28%) done
+
+[Fri Oct 10 00:20:52 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN097.GC_counts.txt
+    output: results/GC_bias/PAN097.GC_bias.txt, results/GC_plots/PAN097.GC_bias.summary.pdf
+    jobid: 145
+    wildcards: out_dir=results, samples=PAN097
+
+Submitted job 145 with external jobid 'Submitted batch job 18263480'.
+[Fri Oct 10 00:23:54 2025]
+Finished job 119.
+43 of 152 steps (28%) done
+
+[Fri Oct 10 00:23:54 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1093.GC_counts.txt
+    output: results/GC_bias/POG1093.GC_bias.txt, results/GC_plots/POG1093.GC_bias.summary.pdf
+    jobid: 91
+    wildcards: out_dir=results, samples=POG1093
+
+[Fri Oct 10 00:23:54 2025]
+Finished job 132.
+44 of 152 steps (29%) done
+Submitted job 91 with external jobid 'Submitted batch job 18263505'.
+
+[Fri Oct 10 00:23:54 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN076.GC_counts.txt
+    output: results/GC_bias/PAN076.GC_bias.txt, results/GC_plots/PAN076.GC_bias.summary.pdf
+    jobid: 81
+    wildcards: out_dir=results, samples=PAN076
+
+Submitted job 81 with external jobid 'Submitted batch job 18263506'.
+[Fri Oct 10 00:25:46 2025]
+Finished job 138.
+45 of 152 steps (30%) done
+
+[Fri Oct 10 00:25:46 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1083.GC_counts.txt
+    output: results/GC_bias/POG1083.GC_bias.txt, results/GC_plots/POG1083.GC_bias.summary.pdf
+    jobid: 114
+    wildcards: out_dir=results, samples=POG1083
+
+Submitted job 114 with external jobid 'Submitted batch job 18263510'.
+[Fri Oct 10 00:27:39 2025]
+Finished job 145.
+46 of 152 steps (30%) done
+
+[Fri Oct 10 00:27:39 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1018.GC_counts.txt
+    output: results/GC_bias/POG1018.GC_bias.txt, results/GC_plots/POG1018.GC_bias.summary.pdf
+    jobid: 120
+    wildcards: out_dir=results, samples=POG1018
+
+Submitted job 120 with external jobid 'Submitted batch job 18263530'.
+[Fri Oct 10 00:27:42 2025]
+Finished job 78.
+47 of 152 steps (31%) done
+
+[Fri Oct 10 00:27:42 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1151.GC_counts.txt
+    output: results/GC_bias/POG1151.GC_bias.txt, results/GC_plots/POG1151.GC_bias.summary.pdf
+    jobid: 136
+    wildcards: out_dir=results, samples=POG1151
+
+Submitted job 136 with external jobid 'Submitted batch job 18263531'.
+[Fri Oct 10 00:28:24 2025]
+Finished job 98.
+48 of 152 steps (32%) done
+
+[Fri Oct 10 00:28:24 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN106.GC_counts.txt
+    output: results/GC_bias/PAN106.GC_bias.txt, results/GC_plots/PAN106.GC_bias.summary.pdf
+    jobid: 109
+    wildcards: out_dir=results, samples=PAN106
+
+Submitted job 109 with external jobid 'Submitted batch job 18263549'.
+[Fri Oct 10 00:33:01 2025]
+Finished job 114.
+49 of 152 steps (32%) done
+
+[Fri Oct 10 00:33:01 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN067.GC_counts.txt
+    output: results/GC_bias/PAN067.GC_bias.txt, results/GC_plots/PAN067.GC_bias.summary.pdf
+    jobid: 110
+    wildcards: out_dir=results, samples=PAN067
+
+[Fri Oct 10 00:33:01 2025]
+Finished job 91.
+50 of 152 steps (33%) done
+Submitted job 110 with external jobid 'Submitted batch job 18263570'.
+[Fri Oct 10 00:33:01 2025]
+Finished job 81.
+51 of 152 steps (34%) done
+
+[Fri Oct 10 00:33:01 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN042.GC_counts.txt
+    output: results/GC_bias/PAN042.GC_bias.txt, results/GC_plots/PAN042.GC_bias.summary.pdf
+    jobid: 127
+    wildcards: out_dir=results, samples=PAN042
+
+Submitted job 127 with external jobid 'Submitted batch job 18263571'.
+
+[Fri Oct 10 00:33:01 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1071.GC_counts.txt
+    output: results/GC_bias/POG1071.GC_bias.txt, results/GC_plots/POG1071.GC_bias.summary.pdf
+    jobid: 143
+    wildcards: out_dir=results, samples=POG1071
+
+Submitted job 143 with external jobid 'Submitted batch job 18263572'.
+Write-protecting output file results/GC_counts/POG798.GC_counts.txt.
+[Fri Oct 10 00:33:03 2025]
+Finished job 60.
+52 of 152 steps (34%) done
+
+[Fri Oct 10 00:33:03 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1126.GC_counts.txt
+    output: results/GC_bias/POG1126.GC_bias.txt, results/GC_plots/POG1126.GC_bias.summary.pdf
+    jobid: 89
+    wildcards: out_dir=results, samples=POG1126
+
+Submitted job 89 with external jobid 'Submitted batch job 18263573'.
+Write-protecting output file results/GC_counts/PAN115.GC_counts.txt.
+[Fri Oct 10 00:33:04 2025]
+Finished job 58.
+53 of 152 steps (35%) done
+
+[Fri Oct 10 00:33:04 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN115.GC_counts.txt
+    output: results/GC_bias/PAN115.GC_bias.txt, results/GC_plots/PAN115.GC_bias.summary.pdf
+    jobid: 133
+    wildcards: out_dir=results, samples=PAN115
+
+Submitted job 133 with external jobid 'Submitted batch job 18263574'.
+Write-protecting output file results/GC_counts/POG1003.GC_counts.txt.
+[Fri Oct 10 00:38:39 2025]
+Finished job 51.
+54 of 152 steps (36%) done
+
+[Fri Oct 10 00:38:39 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1003.GC_counts.txt
+    output: results/GC_bias/POG1003.GC_bias.txt, results/GC_plots/POG1003.GC_bias.summary.pdf
+    jobid: 126
+    wildcards: out_dir=results, samples=POG1003
+
+Submitted job 126 with external jobid 'Submitted batch job 18263597'.
+Write-protecting output file results/GC_counts/POG1057.GC_counts.txt.
+[Fri Oct 10 00:38:40 2025]
+Finished job 7.
+55 of 152 steps (36%) done
+
+[Fri Oct 10 00:38:40 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1072.GC_counts.txt
+    output: results/GC_bias/POG1072.GC_bias.txt, results/GC_plots/POG1072.GC_bias.summary.pdf
+    jobid: 139
+    wildcards: out_dir=results, samples=POG1072
+
+[Fri Oct 10 00:38:40 2025]
+Finished job 109.
+56 of 152 steps (37%) done
+Submitted job 139 with external jobid 'Submitted batch job 18263598'.
+
+[Fri Oct 10 00:38:40 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1049.GC_counts.txt
+    output: results/GC_bias/POG1049.GC_bias.txt, results/GC_plots/POG1049.GC_bias.summary.pdf
+    jobid: 97
+    wildcards: out_dir=results, samples=POG1049
+
+Submitted job 97 with external jobid 'Submitted batch job 18263599'.
+[Fri Oct 10 00:40:58 2025]
+Finished job 120.
+57 of 152 steps (38%) done
+
+[Fri Oct 10 00:40:58 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1145.GC_counts.txt
+    output: results/GC_bias/POG1145.GC_bias.txt, results/GC_plots/POG1145.GC_bias.summary.pdf
+    jobid: 76
+    wildcards: out_dir=results, samples=POG1145
+
+Submitted job 76 with external jobid 'Submitted batch job 18263602'.
+[Fri Oct 10 00:41:01 2025]
+Finished job 136.
+58 of 152 steps (38%) done
+
+[Fri Oct 10 00:41:01 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1651.GC_counts.txt
+    output: results/GC_bias/POG1651.GC_bias.txt, results/GC_plots/POG1651.GC_bias.summary.pdf
+    jobid: 85
+    wildcards: out_dir=results, samples=POG1651
+
+Submitted job 85 with external jobid 'Submitted batch job 18263603'.
+[Fri Oct 10 00:43:18 2025]
+Finished job 110.
+59 of 152 steps (39%) done
+
+[Fri Oct 10 00:43:18 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1757.GC_counts.txt
+    output: results/GC_bias/POG1757.GC_bias.txt, results/GC_plots/POG1757.GC_bias.summary.pdf
+    jobid: 100
+    wildcards: out_dir=results, samples=POG1757
+
+[Fri Oct 10 00:43:18 2025]
+Finished job 127.
+60 of 152 steps (39%) done
+[Fri Oct 10 00:43:18 2025]
+Finished job 143.
+61 of 152 steps (40%) done
+Submitted job 100 with external jobid 'Submitted batch job 18263623'.
+
+[Fri Oct 10 00:43:18 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN054.GC_counts.txt
+    output: results/GC_bias/PAN054.GC_bias.txt, results/GC_plots/PAN054.GC_bias.summary.pdf
+    jobid: 95
+    wildcards: out_dir=results, samples=PAN054
+
+[Fri Oct 10 00:43:18 2025]
+Finished job 89.
+62 of 152 steps (41%) done
+Submitted job 95 with external jobid 'Submitted batch job 18263624'.
+
+[Fri Oct 10 00:43:18 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN090.GC_counts.txt
+    output: results/GC_bias/PAN090.GC_bias.txt, results/GC_plots/PAN090.GC_bias.summary.pdf
+    jobid: 88
+    wildcards: out_dir=results, samples=PAN090
+
+Submitted job 88 with external jobid 'Submitted batch job 18263625'.
+
+[Fri Oct 10 00:43:18 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1725.GC_counts.txt
+    output: results/GC_bias/POG1725.GC_bias.txt, results/GC_plots/POG1725.GC_bias.summary.pdf
+    jobid: 104
+    wildcards: out_dir=results, samples=POG1725
+
+Submitted job 104 with external jobid 'Submitted batch job 18263626'.
+[Fri Oct 10 00:43:21 2025]
+Finished job 133.
+63 of 152 steps (41%) done
+
+[Fri Oct 10 00:43:21 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1057.GC_counts.txt
+    output: results/GC_bias/POG1057.GC_bias.txt, results/GC_plots/POG1057.GC_bias.summary.pdf
+    jobid: 82
+    wildcards: out_dir=results, samples=POG1057
+
+Submitted job 82 with external jobid 'Submitted batch job 18263627'.
+Write-protecting output file results/GC_counts/POG1132.GC_counts.txt.
+[Fri Oct 10 00:45:40 2025]
+Finished job 40.
+64 of 152 steps (42%) done
+
+[Fri Oct 10 00:45:40 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1132.GC_counts.txt
+    output: results/GC_bias/POG1132.GC_bias.txt, results/GC_plots/POG1132.GC_bias.summary.pdf
+    jobid: 115
+    wildcards: out_dir=results, samples=POG1132
+
+Submitted job 115 with external jobid 'Submitted batch job 18263629'.
+[Fri Oct 10 00:48:40 2025]
+Finished job 76.
+65 of 152 steps (43%) done
+
+[Fri Oct 10 00:48:40 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN069.GC_counts.txt
+    output: results/GC_bias/PAN069.GC_bias.txt, results/GC_plots/PAN069.GC_bias.summary.pdf
+    jobid: 123
+    wildcards: out_dir=results, samples=PAN069
+
+[Fri Oct 10 00:48:40 2025]
+Finished job 126.
+66 of 152 steps (43%) done
+Submitted job 123 with external jobid 'Submitted batch job 18263649'.
+
+[Fri Oct 10 00:48:40 2025]
+rule GC_bias:
+    input: results/GC_counts/POG2048.GC_counts.txt
+    output: results/GC_bias/POG2048.GC_bias.txt, results/GC_plots/POG2048.GC_bias.summary.pdf
+    jobid: 130
+    wildcards: out_dir=results, samples=POG2048
+
+Submitted job 130 with external jobid 'Submitted batch job 18263650'.
+[Fri Oct 10 00:48:43 2025]
+Finished job 139.
+67 of 152 steps (44%) done
+
+[Fri Oct 10 00:48:43 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1096.GC_counts.txt
+    output: results/GC_bias/POG1096.GC_bias.txt, results/GC_plots/POG1096.GC_bias.summary.pdf
+    jobid: 125
+    wildcards: out_dir=results, samples=POG1096
+
+[Fri Oct 10 00:48:43 2025]
+Finished job 97.
+68 of 152 steps (45%) done
+Submitted job 125 with external jobid 'Submitted batch job 18263651'.
+[Fri Oct 10 00:48:43 2025]
+Finished job 85.
+69 of 152 steps (45%) done
+
+[Fri Oct 10 00:48:43 2025]
+rule GC_bias:
+    input: results/GC_counts/POG2046.GC_counts.txt
+    output: results/GC_bias/POG2046.GC_bias.txt, results/GC_plots/POG2046.GC_bias.summary.pdf
+    jobid: 128
+    wildcards: out_dir=results, samples=POG2046
+
+Submitted job 128 with external jobid 'Submitted batch job 18263652'.
+
+[Fri Oct 10 00:48:43 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN061.GC_counts.txt
+    output: results/GC_bias/PAN061.GC_bias.txt, results/GC_plots/PAN061.GC_bias.summary.pdf
+    jobid: 80
+    wildcards: out_dir=results, samples=PAN061
+
+Submitted job 80 with external jobid 'Submitted batch job 18263653'.
+Write-protecting output file results/GC_counts/POG955.GC_counts.txt.
+[Fri Oct 10 00:49:53 2025]
+Finished job 8.
+70 of 152 steps (46%) done
+
+[Fri Oct 10 00:49:53 2025]
+rule GC_bias:
+    input: results/GC_counts/POG955.GC_counts.txt
+    output: results/GC_bias/POG955.GC_bias.txt, results/GC_plots/POG955.GC_bias.summary.pdf
+    jobid: 83
+    wildcards: out_dir=results, samples=POG955
+
+Submitted job 83 with external jobid 'Submitted batch job 18263661'.
+[Fri Oct 10 00:53:06 2025]
+Finished job 115.
+71 of 152 steps (47%) done
+
+[Fri Oct 10 00:53:06 2025]
+rule GC_bias:
+    input: results/GC_counts/POG966.GC_counts.txt
+    output: results/GC_bias/POG966.GC_bias.txt, results/GC_plots/POG966.GC_bias.summary.pdf
+    jobid: 92
+    wildcards: out_dir=results, samples=POG966
+
+[Fri Oct 10 00:53:06 2025]
+Finished job 100.
+72 of 152 steps (47%) done
+[Fri Oct 10 00:53:06 2025]
+Finished job 95.
+73 of 152 steps (48%) done
+Submitted job 92 with external jobid 'Submitted batch job 18263663'.
+[Fri Oct 10 00:53:06 2025]
+Finished job 88.
+74 of 152 steps (49%) done
+
+[Fri Oct 10 00:53:06 2025]
+rule GC_bias:
+    input: results/GC_counts/POG949.GC_counts.txt
+    output: results/GC_bias/POG949.GC_bias.txt, results/GC_plots/POG949.GC_bias.summary.pdf
+    jobid: 96
+    wildcards: out_dir=results, samples=POG949
+
+[Fri Oct 10 00:53:06 2025]
+Finished job 104.
+75 of 152 steps (49%) done
+Submitted job 96 with external jobid 'Submitted batch job 18263664'.
+
+[Fri Oct 10 00:53:07 2025]
+rule GC_bias:
+    input: results/GC_counts/POG710.GC_counts.txt
+    output: results/GC_bias/POG710.GC_bias.txt, results/GC_plots/POG710.GC_bias.summary.pdf
+    jobid: 117
+    wildcards: out_dir=results, samples=POG710
+
+Submitted job 117 with external jobid 'Submitted batch job 18263665'.
+
+[Fri Oct 10 00:53:07 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1009.GC_counts.txt
+    output: results/GC_bias/POG1009.GC_bias.txt, results/GC_plots/POG1009.GC_bias.summary.pdf
+    jobid: 79
+    wildcards: out_dir=results, samples=POG1009
+
+Submitted job 79 with external jobid 'Submitted batch job 18263666'.
+
+[Fri Oct 10 00:53:07 2025]
+rule GC_bias:
+    input: results/GC_counts/POG2015.GC_counts.txt
+    output: results/GC_bias/POG2015.GC_bias.txt, results/GC_plots/POG2015.GC_bias.summary.pdf
+    jobid: 129
+    wildcards: out_dir=results, samples=POG2015
+
+Submitted job 129 with external jobid 'Submitted batch job 18263667'.
+[Fri Oct 10 00:53:09 2025]
+Finished job 82.
+76 of 152 steps (50%) done
+
+[Fri Oct 10 00:53:09 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1199.GC_counts.txt
+    output: results/GC_bias/POG1199.GC_bias.txt, results/GC_plots/POG1199.GC_bias.summary.pdf
+    jobid: 103
+    wildcards: out_dir=results, samples=POG1199
+
+Submitted job 103 with external jobid 'Submitted batch job 18263668'.
+[Fri Oct 10 01:02:27 2025]
+Finished job 96.
+77 of 152 steps (51%) done
+
+[Fri Oct 10 01:02:27 2025]
+rule GC_bias:
+    input: results/GC_counts/POG798.GC_counts.txt
+    output: results/GC_bias/POG798.GC_bias.txt, results/GC_plots/POG798.GC_bias.summary.pdf
+    jobid: 135
+    wildcards: out_dir=results, samples=POG798
+
+[Fri Oct 10 01:02:27 2025]
+Finished job 129.
+78 of 152 steps (51%) done
+Submitted job 135 with external jobid 'Submitted batch job 18263708'.
+
+[Fri Oct 10 01:02:27 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1006.GC_counts.txt
+    output: results/GC_bias/POG1006.GC_bias.txt, results/GC_plots/POG1006.GC_bias.summary.pdf
+    jobid: 102
+    wildcards: out_dir=results, samples=POG1006
+
+Submitted job 102 with external jobid 'Submitted batch job 18263709'.
+[Fri Oct 10 01:02:30 2025]
+Finished job 80.
+79 of 152 steps (52%) done
+
+[Fri Oct 10 01:02:30 2025]
+rule GC_bias:
+    input: results/GC_counts/POG969.GC_counts.txt
+    output: results/GC_bias/POG969.GC_bias.txt, results/GC_plots/POG969.GC_bias.summary.pdf
+    jobid: 116
+    wildcards: out_dir=results, samples=POG969
+
+Submitted job 116 with external jobid 'Submitted batch job 18263711'.
+[Fri Oct 10 01:02:41 2025]
+Finished job 117.
+80 of 152 steps (53%) done
+
+[Fri Oct 10 01:02:41 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN047.GC_counts.txt
+    output: results/GC_bias/PAN047.GC_bias.txt, results/GC_plots/PAN047.GC_bias.summary.pdf
+    jobid: 107
+    wildcards: out_dir=results, samples=PAN047
+
+[Fri Oct 10 01:02:41 2025]
+Finished job 123.
+81 of 152 steps (53%) done
+Submitted job 107 with external jobid 'Submitted batch job 18263720'.
+
+[Fri Oct 10 01:02:41 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN074.GC_counts.txt
+    output: results/GC_bias/PAN074.GC_bias.txt, results/GC_plots/PAN074.GC_bias.summary.pdf
+    jobid: 118
+    wildcards: out_dir=results, samples=PAN074
+
+Submitted job 118 with external jobid 'Submitted batch job 18263721'.
+[Fri Oct 10 01:02:44 2025]
+Finished job 125.
+82 of 152 steps (54%) done
+
+[Fri Oct 10 01:02:44 2025]
+rule GC_bias:
+    input: results/GC_counts/POG920.GC_counts.txt
+    output: results/GC_bias/POG920.GC_bias.txt, results/GC_plots/POG920.GC_bias.summary.pdf
+    jobid: 121
+    wildcards: out_dir=results, samples=POG920
+
+[Fri Oct 10 01:02:44 2025]
+Finished job 103.
+83 of 152 steps (55%) done
+Submitted job 121 with external jobid 'Submitted batch job 18263724'.
+[Fri Oct 10 01:02:55 2025]
+Finished job 79.
+84 of 152 steps (55%) done
+[Fri Oct 10 01:02:55 2025]
+Finished job 130.
+85 of 152 steps (56%) done
+[Fri Oct 10 01:02:58 2025]
+Finished job 128.
+86 of 152 steps (57%) done
+[Fri Oct 10 01:02:58 2025]
+Finished job 83.
+87 of 152 steps (57%) done
+[Fri Oct 10 01:03:34 2025]
+Finished job 92.
+88 of 152 steps (58%) done
+Write-protecting output file results/GC_counts/POG1146.GC_counts.txt.
+[Fri Oct 10 01:03:35 2025]
+Finished job 67.
+89 of 152 steps (59%) done
+
+[Fri Oct 10 01:03:35 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1146.GC_counts.txt
+    output: results/GC_bias/POG1146.GC_bias.txt, results/GC_plots/POG1146.GC_bias.summary.pdf
+    jobid: 142
+    wildcards: out_dir=results, samples=POG1146
+
+Submitted job 142 with external jobid 'Submitted batch job 18263728'.
+[Fri Oct 10 01:18:32 2025]
+Finished job 142.
+90 of 152 steps (59%) done
+[Fri Oct 10 01:18:32 2025]
+Finished job 107.
+91 of 152 steps (60%) done
+[Fri Oct 10 01:18:32 2025]
+Finished job 118.
+92 of 152 steps (61%) done
+[Fri Oct 10 01:18:32 2025]
+Finished job 135.
+93 of 152 steps (61%) done
+[Fri Oct 10 01:18:32 2025]
+Finished job 102.
+94 of 152 steps (62%) done
+Write-protecting output file results/GC_counts/POG811.GC_counts.txt.
+[Fri Oct 10 01:18:33 2025]
+Finished job 37.
+95 of 152 steps (62%) done
+
+[Fri Oct 10 01:18:33 2025]
+rule GC_bias:
+    input: results/GC_counts/POG811.GC_counts.txt
+    output: results/GC_bias/POG811.GC_bias.txt, results/GC_plots/POG811.GC_bias.summary.pdf
+    jobid: 112
+    wildcards: out_dir=results, samples=POG811
+
+Submitted job 112 with external jobid 'Submitted batch job 18263946'.
+[Fri Oct 10 01:18:35 2025]
+Finished job 116.
+96 of 152 steps (63%) done
+[Fri Oct 10 01:18:35 2025]
+Finished job 121.
+97 of 152 steps (64%) done
+Write-protecting output file results/GC_counts/POG1181.GC_counts.txt.
+[Fri Oct 10 01:22:47 2025]
+Finished job 59.
+98 of 152 steps (64%) done
+
+[Fri Oct 10 01:22:47 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1181.GC_counts.txt
+    output: results/GC_bias/POG1181.GC_bias.txt, results/GC_plots/POG1181.GC_bias.summary.pdf
+    jobid: 134
+    wildcards: out_dir=results, samples=POG1181
+
+Submitted job 134 with external jobid 'Submitted batch job 18263968'.
+[Fri Oct 10 01:28:34 2025]
+Finished job 112.
+99 of 152 steps (65%) done
+[Fri Oct 10 01:33:22 2025]
+Finished job 134.
+100 of 152 steps (66%) done
+Write-protecting output file results/GC_counts/POG1067.GC_counts.txt.
+[Fri Oct 10 01:54:13 2025]
+Finished job 49.
+101 of 152 steps (66%) done
+
+[Fri Oct 10 01:54:13 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1067.GC_counts.txt
+    output: results/GC_bias/POG1067.GC_bias.txt, results/GC_plots/POG1067.GC_bias.summary.pdf
+    jobid: 124
+    wildcards: out_dir=results, samples=POG1067
+
+Submitted job 124 with external jobid 'Submitted batch job 18264091'.
+Write-protecting output file results/GC_counts/POG1391.GC_counts.txt.
+[Fri Oct 10 01:59:02 2025]
+Finished job 26.
+102 of 152 steps (67%) done
+
+[Fri Oct 10 01:59:02 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1391.GC_counts.txt
+    output: results/GC_bias/POG1391.GC_bias.txt, results/GC_plots/POG1391.GC_bias.summary.pdf
+    jobid: 101
+    wildcards: out_dir=results, samples=POG1391
+
+Submitted job 101 with external jobid 'Submitted batch job 18264117'.
+[Fri Oct 10 02:06:13 2025]
+Finished job 124.
+103 of 152 steps (68%) done
+[Fri Oct 10 02:11:03 2025]
+Finished job 101.
+104 of 152 steps (68%) done
+Write-protecting output file results/GC_counts/PAN081.GC_counts.txt.
+[Fri Oct 10 02:32:39 2025]
+Finished job 15.
+105 of 152 steps (69%) done
+
+[Fri Oct 10 02:32:39 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN081.GC_counts.txt
+    output: results/GC_bias/PAN081.GC_bias.txt, results/GC_plots/PAN081.GC_bias.summary.pdf
+    jobid: 90
+    wildcards: out_dir=results, samples=PAN081
+
+Submitted job 90 with external jobid 'Submitted batch job 18264267'.
+[Fri Oct 10 02:45:27 2025]
+Finished job 90.
+106 of 152 steps (70%) done
+Write-protecting output file results/GC_counts/POG1000.GC_counts.txt.
+[Fri Oct 10 03:24:18 2025]
+Finished job 18.
+107 of 152 steps (70%) done
+
+[Fri Oct 10 03:24:18 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1000.GC_counts.txt
+    output: results/GC_bias/POG1000.GC_bias.txt, results/GC_plots/POG1000.GC_bias.summary.pdf
+    jobid: 93
+    wildcards: out_dir=results, samples=POG1000
+
+Submitted job 93 with external jobid 'Submitted batch job 18264668'.
+Write-protecting output file results/GC_counts/POG1020.GC_counts.txt.
+[Fri Oct 10 03:29:08 2025]
+Finished job 9.
+108 of 152 steps (71%) done
+
+[Fri Oct 10 03:29:08 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1020.GC_counts.txt
+    output: results/GC_bias/POG1020.GC_bias.txt, results/GC_plots/POG1020.GC_bias.summary.pdf
+    jobid: 84
+    wildcards: out_dir=results, samples=POG1020
+
+Submitted job 84 with external jobid 'Submitted batch job 18264685'.
+[Fri Oct 10 03:33:19 2025]
+Finished job 93.
+109 of 152 steps (72%) done
+Write-protecting output file results/GC_counts/POG1195.GC_counts.txt.
+[Fri Oct 10 03:35:07 2025]
+Finished job 71.
+110 of 152 steps (72%) done
+
+[Fri Oct 10 03:35:07 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1195.GC_counts.txt
+    output: results/GC_bias/POG1195.GC_bias.txt, results/GC_plots/POG1195.GC_bias.summary.pdf
+    jobid: 146
+    wildcards: out_dir=results, samples=POG1195
+
+Submitted job 146 with external jobid 'Submitted batch job 18264704'.
+[Fri Oct 10 03:37:57 2025]
+Finished job 84.
+111 of 152 steps (73%) done
+[Fri Oct 10 03:43:31 2025]
+Finished job 146.
+112 of 152 steps (74%) done
+Write-protecting output file results/GC_counts/POG1713.GC_counts.txt.
+[Fri Oct 10 03:49:47 2025]
+Finished job 74.
+113 of 152 steps (74%) done
+
+[Fri Oct 10 03:49:47 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1713.GC_counts.txt
+    output: results/GC_bias/POG1713.GC_bias.txt, results/GC_plots/POG1713.GC_bias.summary.pdf
+    jobid: 149
+    wildcards: out_dir=results, samples=POG1713
+
+Submitted job 149 with external jobid 'Submitted batch job 18264771'.
+Write-protecting output file results/GC_counts/PAN044.GC_counts.txt.
+[Fri Oct 10 04:00:27 2025]
+Finished job 30.
+114 of 152 steps (75%) done
+
+[Fri Oct 10 04:00:27 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN044.GC_counts.txt
+    output: results/GC_bias/PAN044.GC_bias.txt, results/GC_plots/PAN044.GC_bias.summary.pdf
+    jobid: 105
+    wildcards: out_dir=results, samples=PAN044
+
+Submitted job 105 with external jobid 'Submitted batch job 18264797'.
+[Fri Oct 10 04:00:48 2025]
+Finished job 149.
+115 of 152 steps (76%) done
+Write-protecting output file results/GC_counts/PAN051.GC_counts.txt.
+[Fri Oct 10 04:04:39 2025]
+Finished job 62.
+116 of 152 steps (76%) done
+
+[Fri Oct 10 04:04:39 2025]
+rule GC_bias:
+    input: results/GC_counts/PAN051.GC_counts.txt
+    output: results/GC_bias/PAN051.GC_bias.txt, results/GC_plots/PAN051.GC_bias.summary.pdf
+    jobid: 137
+    wildcards: out_dir=results, samples=PAN051
+
+Submitted job 137 with external jobid 'Submitted batch job 18264801'.
+[Fri Oct 10 04:08:42 2025]
+Finished job 105.
+117 of 152 steps (77%) done
+[Fri Oct 10 04:15:51 2025]
+Finished job 137.
+118 of 152 steps (78%) done
+Write-protecting output file results/GC_counts/POG793.GC_counts.txt.
+[Fri Oct 10 04:18:47 2025]
+Finished job 2.
+119 of 152 steps (78%) done
+
+[Fri Oct 10 04:18:47 2025]
+rule GC_bias:
+    input: results/GC_counts/POG793.GC_counts.txt
+    output: results/GC_bias/POG793.GC_bias.txt, results/GC_plots/POG793.GC_bias.summary.pdf
+    jobid: 77
+    wildcards: out_dir=results, samples=POG793
+
+Submitted job 77 with external jobid 'Submitted batch job 18264845'.
+Write-protecting output file results/GC_counts/POG757.GC_counts.txt.
+[Fri Oct 10 04:23:56 2025]
+Finished job 65.
+120 of 152 steps (79%) done
+
+[Fri Oct 10 04:23:56 2025]
+rule GC_bias:
+    input: results/GC_counts/POG757.GC_counts.txt
+    output: results/GC_bias/POG757.GC_bias.txt, results/GC_plots/POG757.GC_bias.summary.pdf
+    jobid: 140
+    wildcards: out_dir=results, samples=POG757
+
+Submitted job 140 with external jobid 'Submitted batch job 18264851'.
+[Fri Oct 10 04:28:20 2025]
+Finished job 77.
+121 of 152 steps (80%) done
+Write-protecting output file results/GC_counts/POG1108.GC_counts.txt.
+[Fri Oct 10 04:38:58 2025]
+Finished job 56.
+122 of 152 steps (80%) done
+
+[Fri Oct 10 04:38:58 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1108.GC_counts.txt
+    output: results/GC_bias/POG1108.GC_bias.txt, results/GC_plots/POG1108.GC_bias.summary.pdf
+    jobid: 131
+    wildcards: out_dir=results, samples=POG1108
+
+Submitted job 131 with external jobid 'Submitted batch job 18264878'.
+[Fri Oct 10 04:38:59 2025]
+Finished job 140.
+123 of 152 steps (81%) done
+Write-protecting output file results/GC_counts/POG1764.GC_counts.txt.
+[Fri Oct 10 04:44:29 2025]
+Finished job 11.
+124 of 152 steps (82%) done
+
+[Fri Oct 10 04:44:29 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1764.GC_counts.txt
+    output: results/GC_bias/POG1764.GC_bias.txt, results/GC_plots/POG1764.GC_bias.summary.pdf
+    jobid: 86
+    wildcards: out_dir=results, samples=POG1764
+
+Submitted job 86 with external jobid 'Submitted batch job 18264895'.
+Write-protecting output file results/GC_counts/POG914.GC_counts.txt.
+[Fri Oct 10 04:46:20 2025]
+Finished job 33.
+125 of 152 steps (82%) done
+
+[Fri Oct 10 04:46:20 2025]
+rule GC_bias:
+    input: results/GC_counts/POG914.GC_counts.txt
+    output: results/GC_bias/POG914.GC_bias.txt, results/GC_plots/POG914.GC_bias.summary.pdf
+    jobid: 108
+    wildcards: out_dir=results, samples=POG914
+
+Submitted job 108 with external jobid 'Submitted batch job 18264905'.
+[Fri Oct 10 04:52:55 2025]
+Finished job 86.
+126 of 152 steps (83%) done
+[Fri Oct 10 04:53:06 2025]
+Finished job 131.
+127 of 152 steps (84%) done
+[Fri Oct 10 04:56:04 2025]
+Finished job 108.
+128 of 152 steps (84%) done
+Write-protecting output file results/GC_counts/POG1129.GC_counts.txt.
+[Fri Oct 10 06:29:06 2025]
+Finished job 66.
+129 of 152 steps (85%) done
+
+[Fri Oct 10 06:29:06 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1129.GC_counts.txt
+    output: results/GC_bias/POG1129.GC_bias.txt, results/GC_plots/POG1129.GC_bias.summary.pdf
+    jobid: 141
+    wildcards: out_dir=results, samples=POG1129
+
+Submitted job 141 with external jobid 'Submitted batch job 18265411'.
+[Fri Oct 10 06:38:38 2025]
+Finished job 141.
+130 of 152 steps (86%) done
+Write-protecting output file results/GC_counts/POG1279.GC_counts.txt.
+[Fri Oct 10 06:48:11 2025]
+Finished job 31.
+131 of 152 steps (86%) done
+
+[Fri Oct 10 06:48:11 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1279.GC_counts.txt
+    output: results/GC_bias/POG1279.GC_bias.txt, results/GC_plots/POG1279.GC_bias.summary.pdf
+    jobid: 106
+    wildcards: out_dir=results, samples=POG1279
+
+Submitted job 106 with external jobid 'Submitted batch job 18265457'.
+[Fri Oct 10 07:03:36 2025]
+Finished job 106.
+132 of 152 steps (87%) done
+Write-protecting output file results/GC_counts/POG878.GC_counts.txt.
+[Fri Oct 10 07:28:09 2025]
+Finished job 19.
+133 of 152 steps (88%) done
+
+[Fri Oct 10 07:28:09 2025]
+rule GC_bias:
+    input: results/GC_counts/POG878.GC_counts.txt
+    output: results/GC_bias/POG878.GC_bias.txt, results/GC_plots/POG878.GC_bias.summary.pdf
+    jobid: 94
+    wildcards: out_dir=results, samples=POG878
+
+Submitted job 94 with external jobid 'Submitted batch job 18265576'.
+Write-protecting output file results/GC_counts/POG1147.GC_counts.txt.
+[Fri Oct 10 07:35:09 2025]
+Finished job 75.
+134 of 152 steps (88%) done
+
+[Fri Oct 10 07:35:09 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1147.GC_counts.txt
+    output: results/GC_bias/POG1147.GC_bias.txt, results/GC_plots/POG1147.GC_bias.summary.pdf
+    jobid: 150
+    wildcards: out_dir=results, samples=POG1147
+
+Submitted job 150 with external jobid 'Submitted batch job 18265593'.
+[Fri Oct 10 07:38:09 2025]
+Finished job 94.
+135 of 152 steps (89%) done
+[Fri Oct 10 07:43:50 2025]
+Finished job 150.
+136 of 152 steps (89%) done
+Write-protecting output file results/GC_counts/POG1804.GC_counts.txt.
+[Fri Oct 10 07:46:20 2025]
+Finished job 24.
+137 of 152 steps (90%) done
+
+[Fri Oct 10 07:46:20 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1804.GC_counts.txt
+    output: results/GC_bias/POG1804.GC_bias.txt, results/GC_plots/POG1804.GC_bias.summary.pdf
+    jobid: 99
+    wildcards: out_dir=results, samples=POG1804
+
+Submitted job 99 with external jobid 'Submitted batch job 18265610'.
+Write-protecting output file results/GC_counts/POG1135.GC_counts.txt.
+[Fri Oct 10 07:52:20 2025]
+Finished job 12.
+138 of 152 steps (91%) done
+
+[Fri Oct 10 07:52:20 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1135.GC_counts.txt
+    output: results/GC_bias/POG1135.GC_bias.txt, results/GC_plots/POG1135.GC_bias.summary.pdf
+    jobid: 87
+    wildcards: out_dir=results, samples=POG1135
+
+Submitted job 87 with external jobid 'Submitted batch job 18265627'.
+[Fri Oct 10 07:53:20 2025]
+Finished job 99.
+139 of 152 steps (91%) done
+[Fri Oct 10 08:04:01 2025]
+Finished job 87.
+140 of 152 steps (92%) done
+Write-protecting output file results/GC_counts/POG1156.GC_counts.txt.
+[Fri Oct 10 08:12:32 2025]
+Finished job 72.
+141 of 152 steps (93%) done
+
+[Fri Oct 10 08:12:32 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1156.GC_counts.txt
+    output: results/GC_bias/POG1156.GC_bias.txt, results/GC_plots/POG1156.GC_bias.summary.pdf
+    jobid: 147
+    wildcards: out_dir=results, samples=POG1156
+
+Submitted job 147 with external jobid 'Submitted batch job 18268161'.
+[Fri Oct 10 08:23:33 2025]
+Finished job 147.
+142 of 152 steps (93%) done
+Write-protecting output file results/GC_counts/POG1099.GC_counts.txt.
+[Fri Oct 10 08:39:04 2025]
+Finished job 36.
+143 of 152 steps (94%) done
+
+[Fri Oct 10 08:39:04 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1099.GC_counts.txt
+    output: results/GC_bias/POG1099.GC_bias.txt, results/GC_plots/POG1099.GC_bias.summary.pdf
+    jobid: 111
+    wildcards: out_dir=results, samples=POG1099
+
+Submitted job 111 with external jobid 'Submitted batch job 18268223'.
+[Fri Oct 10 08:49:04 2025]
+Finished job 111.
+144 of 152 steps (95%) done
+Write-protecting output file results/GC_counts/POG1136.GC_counts.txt.
+[Fri Oct 10 10:13:40 2025]
+Finished job 47.
+145 of 152 steps (95%) done
+
+[Fri Oct 10 10:13:40 2025]
+rule GC_bias:
+    input: results/GC_counts/POG1136.GC_counts.txt
+    output: results/GC_bias/POG1136.GC_bias.txt, results/GC_plots/POG1136.GC_bias.summary.pdf
+    jobid: 122
+    wildcards: out_dir=results, samples=POG1136
+
+Submitted job 122 with external jobid 'Submitted batch job 18270122'.
+[Fri Oct 10 10:26:41 2025]
+Finished job 122.
+146 of 152 steps (96%) done
+Terminating processes on user request, this might take some time.
+Will exit after finishing currently running jobs.
+Complete log: /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/.snakemake/log/2025-10-09T112703.283332.snakemake.log

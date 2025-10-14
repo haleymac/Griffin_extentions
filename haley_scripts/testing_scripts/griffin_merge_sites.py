@@ -8,18 +8,18 @@
 # In[ ]:
 
 """
-python /projects/pangen/analysis/hmac/Griffin/snakemakes/run_grif/test_merge_sites/griffin_merge_sites.py \
+python /projects/pangen/analysis/hmac/applications/Griffin/haley_scripts/testing_scripts/griffin_merge_sites.py \
   --sample_name PAN21 \
-  --uncorrected_bw_path /projects/pangen/analysis/hmac/Griffin/snakemakes/run_grif/run_nuc_prof/tmp/PAN21/tmp_bigWig/PAN21.uncorrected.bw \
-  --GC_corrected_bw_path /projects/pangen/analysis/hmac/Griffin/snakemakes/run_grif/run_nuc_prof/tmp/PAN21/tmp_bigWig/PAN21.GC_corrected.bw \
+  --uncorrected_bw_path /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/tmp/PAN21/tmp_bigWig/PAN21.uncorrected.bw \
+  --GC_corrected_bw_path /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/tmp/PAN21/tmp_bigWig/PAN21.GC_corrected.bw \
   --GC_map_corrected_bw_path none \
   --mappability_correction False \
-  --tmp_dir /projects/pangen/analysis/hmac/Griffin/snakemakes/run_grif/run_nuc_prof/tmp \
-  --results_dir results \
-  --mappability_bw /projects/pangen/analysis/hmac/Griffin/Ref/k100.Umap.MultiTrackMappability.bw \
-  --chrom_sizes_path /projects/pangen/analysis/hmac/Griffin/Ref/hg38.standard.chrom.sizes \
-  --sites_yaml /projects/pangen/analysis/hmac/Griffin/snakemakes/griffin_nucleosome_profiling/config/sites.yaml \
-  --griffin_scripts /projects/pangen/analysis/hmac/Griffin/scripts \
+  --tmp_dir /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/tmp \
+  --results_dir /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/results \
+  --mappability_bw /projects/pangen/analysis/hmac/applications/Griffin/Ref/k100.Umap.MultiTrackMappability.bw \
+  --chrom_sizes_path /projects/pangen/analysis/hmac/applications/Griffin/Ref/hg38.standard.chrom.sizes \
+  --sites_yaml /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/config/sites.yaml \
+  --griffin_scripts /projects/pangen/analysis/hmac/applications/Griffin/scripts \
   --chrom_column Chrom \
   --position_column position \
   --strand_column Strand \
@@ -30,11 +30,11 @@ python /projects/pangen/analysis/hmac/Griffin/snakemakes/run_grif/test_merge_sit
   --fft_window -960 960 \
   --fft_index 10 \
   --smoothing_length 165 \
-  --exclude_paths /projects/pangen/analysis/hmac/Griffin/Ref/encode_unified_GRCh38_exclusion_list.bed \
-                  /projects/pangen/analysis/hmac/Griffin/Ref/hg38_centromeres.bed \
-                  /projects/pangen/analysis/hmac/Griffin/Ref/hg38_gaps.bed \
-                  /projects/pangen/analysis/hmac/Griffin/Ref/hg38_fix_patches.bed \
-                  /projects/pangen/analysis/hmac/Griffin/Ref/hg38_alternative_haplotypes.bed \
+  --exclude_paths /projects/pangen/analysis/hmac/applications/Griffin/Ref/encode_unified_GRCh38_exclusion_list.bed \
+                  /projects/pangen/analysis/hmac/applications/Griffin/Ref/hg38_centromeres.bed \
+                  /projects/pangen/analysis/hmac/applications/Griffin/Ref/hg38_gaps.bed \
+                  /projects/pangen/analysis/hmac/applications/Griffin/Ref/hg38_fix_patches.bed \
+                  /projects/pangen/analysis/hmac/applications/Griffin/Ref/hg38_alternative_haplotypes.bed \
   --step 15 \
   --CNA_normalization False \
   --individual False \
@@ -353,6 +353,10 @@ else: #if there are regions to be excluded
     chrom_sizes = chrom_sizes[chrom_sizes[0].isin(chroms)]
     excluded_regions_bw.addHeader([(a,b) for a,b in chrom_sizes.values])
 
+    # Make a chrom sizes dict, to exclude regions beyond the bounds of chromosomes
+    chrom_sizes_dict = dict(zip(chrom_sizes[0], chrom_sizes[1]))
+
+
     for path in exclude_paths:
         print('excluding:',path)
         current_regions = pybedtools.BedTool(path)
@@ -376,6 +380,7 @@ sites = sites['site_lists']
 print('Analyzing '+str(len(sites))+' site lists')
 
 
+
 # In[ ]:
 
 
@@ -392,9 +397,31 @@ def fetch_bw_values(bw_path,current_sites,site_name,name):
 
     results = pd.DataFrame(np.zeros([len(current_sites),norm_window[1]-norm_window[0]]))
     start_time = time.time()
-        
+
+
     for i in range(len(current_sites)):
         chrom,start,end,strand = current_sites.iloc[i][[chrom_column,'fetch_start','fetch_end',strand_column]]
+
+        # Safeguard against invalid intervals
+        chrom_len = chrom_sizes_dict.get(chrom)
+        if chrom_len is None:
+            print(f"Skipping {chrom} — not found in chrom sizes file")
+            continue
+
+        if start < 0 or end > chrom_len or start >= end:
+            print(f"Skipping invalid interval: {chrom}:{start}-{end} (chrom len: {chrom_len})")
+            print(f"[{site_name}] DEBUG — position: {position}, norm_window: {norm_window}, start: {start}, end: {end}")
+
+            continue
+
+        #with pyBigWig.open("/projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/tmp/PAN21/tmp_bigWig/PAN21.uncorrected.bw") as bw:
+        #    print("chrX" in bw.chroms())  # False confirms absence
+        #    print(list(bw.chroms().keys())[:10])  # Quick look at included chroms
+
+
+
+        #print(f"DEBUG: Trying fetch — chrom: {chrom}, start: {start}, end: {end}, strand: {strand}")
+        #sys.stdout.flush()
 
         values = bw.values(chrom, start, end, numpy=True)
         values = np.nan_to_num(values) #turn nan into zero because bw doesn't store zero

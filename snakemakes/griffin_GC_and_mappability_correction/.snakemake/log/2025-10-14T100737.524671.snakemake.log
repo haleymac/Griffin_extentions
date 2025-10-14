@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 40
+Job counts:
+	count	jobs
+	2	GC_bias
+	2	GC_counts
+	1	all
+	1	make_samples_yaml
+	6
+
+[Tue Oct 14 10:07:42 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG998/frag/bams/POG998-cfDNA.bam
+    output: results/GC_counts/POG998.GC_counts.txt
+    jobid: 69
+    wildcards: out_dir=results, samples=POG998
+
+Submitted job 69 with external jobid 'Submitted batch job 18359452'.
+
+[Tue Oct 14 10:07:42 2025]
+rule GC_counts:
+    input: /projects/pangen/analysis/jtopham/samples/POG1008/frag/bams/POG1008-cfDNA.bam
+    output: results/GC_counts/POG1008.GC_counts.txt
+    jobid: 38
+    wildcards: out_dir=results, samples=POG1008
+
+Submitted job 38 with external jobid 'Submitted batch job 18359453'.
+Terminating processes on user request, this might take some time.
+Will exit after finishing currently running jobs.
+Complete log: /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/.snakemake/log/2025-10-14T100737.524671.snakemake.log

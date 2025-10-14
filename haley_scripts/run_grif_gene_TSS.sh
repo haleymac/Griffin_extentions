@@ -5,5 +5,5 @@
 #       --geneset_name Name to call the combined geneset ex. 'Housekeeping_genes'
 
 python /projects/pangen/analysis/hmac/applications/Griffin/haley_scripts/griff_gene_TSS.py \
-  --genes ACTB GAPDH RPLP0 \
-  --geneset_name housekeeping
+  --genes MT-CO1 MT-ND4 MT-ATP6 MT-CO2 MT-RNR2 \
+  --geneset_name PAN21_top5

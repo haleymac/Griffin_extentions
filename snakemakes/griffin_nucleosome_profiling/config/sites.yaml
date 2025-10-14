@@ -1,6 +1,8 @@
 site_lists:
-    ACTB: /projects/pangen/analysis/hmac/applications/Griffin/test/site_files/ACTB.tsv
-    GAPDH_1: /projects/pangen/analysis/hmac/applications/Griffin/test/site_files/GAPDH_1.tsv
-    GAPDH_2: /projects/pangen/analysis/hmac/applications/Griffin/test/site_files/GAPDH_2.tsv
-    RPLP0: /projects/pangen/analysis/hmac/applications/Griffin/test/site_files/RPLP0.tsv
-    housekeeping: /projects/pangen/analysis/hmac/applications/Griffin/test/site_files/housekeeping.tsv
+    MAGEE2: /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/site_files/MAGEE2.tsv
+    TBX22_1: /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/site_files/TBX22_1.tsv
+    TBX22_2: /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/site_files/TBX22_2.tsv
+    TBX22_3: /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/site_files/TBX22_3.tsv
+    CT47A7: /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/site_files/CT47A7.tsv
+    COX8A: /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/site_files/COX8A.tsv
+    PAN21_top5: /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/site_files/PAN21_top5.tsv

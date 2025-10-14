@@ -5,8 +5,6 @@
 #Fred Hutchinson Cancer Research Center
 
 __default__:
-    partition: campus-new
-    time: "24:0:0"
     mem: 4G
     ncpus: 1
     ntasks: 1
@@ -14,14 +12,14 @@ __default__:
     JobName: "{rule}.{wildcards.samples}"
 
 calc_cov:   
-    mem: 10G
-    ncpus: 8 #for parallelization
+    mem: 32G
+    ncpus: 16 #for parallelization
     output: logs/cluster/{rule}.{wildcards.samples}.%A.out
     JobName: "{rule}.{wildcards.samples}"
 
 merge_sites:
-    mem: 10G
-    ncpus: 8 #for parallelization, up to 1 CPU per site list
+    mem: 32G
+    ncpus: 16 #for parallelization, up to 1 CPU per site list
     output: logs/cluster/{rule}.{wildcards.samples}.%A.out
     JobName: "{rule}.{wildcards.samples}"
 

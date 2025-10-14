@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# Note from Haley: I added some lines to remove fetch interval if fetch_start > fetch_end -
+# this allows griffin to run without error on BED files that have regions very close to the chromosome ends, in which the fetch interval gets weird and causes bedtools to crash 
+
 # In[ ]:
 
 
@@ -85,6 +88,8 @@ def define_fetch_interval(name_to_print,sites,chrom_column,position_column,chrom
         adjusted_ends_df = adjusted_ends_df.append(current)
     adjusted_ends_df = adjusted_ends_df.sort_values(by = [chrom_column,position_column]).reset_index(drop=True)
     adjusted_ends_df = adjusted_ends_df.copy()
+    
+    adjusted_ends_df = adjusted_ends_df[(adjusted_ends_df['fetch_start'] < adjusted_ends_df['fetch_end'])].copy()
 
     return(adjusted_ends_df)
 
