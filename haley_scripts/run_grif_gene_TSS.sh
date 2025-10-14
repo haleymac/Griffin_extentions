@@ -3,7 +3,8 @@
 # Arguments:
 #       --genes A list of genes you are interested in and want to see coverage over. Script will run griffin on each gene individually, and also the genes as a merged set 
 #       --geneset_name Name to call the combined geneset ex. 'Housekeeping_genes'
+# Note that your samples.yaml file in the nucleosome profiling snakemake directory will already need to be set up 
 
 python /projects/pangen/analysis/hmac/applications/Griffin/haley_scripts/griff_gene_TSS.py \
   --genes MT-CO1 MT-ND4 MT-ATP6 MT-CO2 MT-RNR2 \
-  --geneset_name PAN21_top5
+  --geneset_name top5

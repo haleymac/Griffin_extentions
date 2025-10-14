@@ -5,3 +5,12 @@ demo/bam/Healthy_GSM1833219_downsampled.sorted.mini.cram
 Ref/k100.Umap.MultiTrackMappability.bw
 Ref/repeat_masker.mapable.k50.Umap.hg38.bedGraph
 demo/bam/Healthy_GSM1833219_downsampled.sorted.mini.cram
+*results*
+/projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/results/*
+*logs*
+/projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/logs/cluster/*
+/projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_GC_and_mappability_correction/config/samples.yaml
+/projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/config/samples.GC.yaml
+/projects/pangen/analysis/hmac/applications/Griffin/haley_scripts/make_samples_yaml.ipynb
+/projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/results/*
+*/.snakemake/*
