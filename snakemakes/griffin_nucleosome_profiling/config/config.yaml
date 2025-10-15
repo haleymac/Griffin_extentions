@@ -18,7 +18,7 @@ griffin_scripts_dir: /projects/pangen/analysis/hmac/applications/Griffin/scripts
 #############################################
 tmp_dir: tmp #where your temporary outputs will go (may be large)
 
-reference_genome: /projects/pangen/analysis/jtopham/fragx/fragx_hg38_ref.fa
+reference_genome: /projects/pangen/analysis/hmac/reference/hg38_ref/BWA_genome_build/hg38_no_alt.fa
 mappability_bw: /projects/pangen/analysis/hmac/applications/Griffin/Ref/k100.Umap.MultiTrackMappability.bw
 
 chrom_sizes_path: /projects/pangen/analysis/hmac/applications/Griffin/Ref/hg38.standard.chrom.sizes
