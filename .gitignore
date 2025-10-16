@@ -14,3 +14,5 @@ demo/bam/Healthy_GSM1833219_downsampled.sorted.mini.cram
 /projects/pangen/analysis/hmac/applications/Griffin/haley_scripts/make_samples_yaml.ipynb
 /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/results/*
 */.snakemake/*
+snakemakes/griffin_GC_and_mappability_correction/config/samples.yaml
+Ref/hg38.fa

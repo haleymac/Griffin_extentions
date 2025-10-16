@@ -5,17 +5,18 @@
 # This version of the script does not use multiprocessing, so you can see which gene is causing the script to fail, which helps with debugging 
 
 
-# In[ ]:
 
+# In[ ]:
+# Call this on the command line torun thuis script, iterate through your target genes and see which one is failing 
 """
 python /projects/pangen/analysis/hmac/applications/Griffin/haley_scripts/testing_scripts/griffin_merge_sites.py \
-  --sample_name PAN21 \
-  --uncorrected_bw_path /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/tmp/PAN21/tmp_bigWig/PAN21.uncorrected.bw \
-  --GC_corrected_bw_path /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/tmp/PAN21/tmp_bigWig/PAN21.GC_corrected.bw \
+  --sample_name PAN042 \
+  --uncorrected_bw_path /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/tmp/PAN042/tmp_bigWig/PAN042.uncorrected.bw \
+  --GC_corrected_bw_path /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/tmp/PAN042/tmp_bigWig/PAN042.GC_corrected.bw \
   --GC_map_corrected_bw_path none \
   --mappability_correction False \
-  --tmp_dir /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/tmp \
-  --results_dir /projects/pangen/analysis/hmac/griffin_analyses/tumour_most_expressed/results \
+  --tmp_dir /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/tmp \
+  --results_dir /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/results \
   --mappability_bw /projects/pangen/analysis/hmac/applications/Griffin/Ref/k100.Umap.MultiTrackMappability.bw \
   --chrom_sizes_path /projects/pangen/analysis/hmac/applications/Griffin/Ref/hg38.standard.chrom.sizes \
   --sites_yaml /projects/pangen/analysis/hmac/applications/Griffin/snakemakes/griffin_nucleosome_profiling/config/sites.yaml \
@@ -45,8 +46,6 @@ python /projects/pangen/analysis/hmac/applications/Griffin/haley_scripts/testing
   --sort_by none \
   --ascending none \
   --CPU 8
-
-
 """
 
 
